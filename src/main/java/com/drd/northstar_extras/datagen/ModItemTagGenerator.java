@@ -4,6 +4,7 @@ import com.drd.northstar_extras.NorthstarExtras;
 import com.drd.northstar_extras.init.ModBlocks;
 import com.drd.northstar_extras.init.ModItems;
 import com.lightning.northstar.block.NorthstarBlocks;
+import com.simibubi.create.AllTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -81,5 +82,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.WILTER_HANGING_SIGN.get())
                 .add(ModItems.ARGYRE_HANGING_SIGN.get())
                 .add(ModItems.CALORIAN_HANGING_SIGN.get());
+
+        this.tag(AllTags.AllItemTags.SANDPAPER.tag)
+                .add(ModItems.MARS_SAND_PAPER.get());
     }
 }

@@ -1,6 +1,7 @@
 package com.drd.northstar_extras.init;
 
 import com.drd.northstar_extras.NorthstarExtras;
+import com.simibubi.create.content.equipment.sandPaper.SandPaperItem;
 import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SignItem;
@@ -29,6 +30,8 @@ public class ModItems {
             () -> new HangingSignItem(ModBlocks.WILTER_HANGING_SIGN.get(), ModBlocks.WILTER_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> CALORIAN_HANGING_SIGN = ITEMS.register("calorian_hanging_sign",
             () -> new HangingSignItem(ModBlocks.CALORIAN_HANGING_SIGN.get(), ModBlocks.CALORIAN_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+    public static final RegistryObject<Item> MARS_SAND_PAPER = ITEMS.register("mars_sand_paper",
+            () -> new SandPaperItem(new Item.Properties().defaultDurability(512)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

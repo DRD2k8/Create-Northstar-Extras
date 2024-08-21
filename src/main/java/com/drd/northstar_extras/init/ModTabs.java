@@ -59,6 +59,7 @@ public class ModTabs {
                         pOutput.accept(ModBlocks.CALORIAN_BUTTON.get());
                         pOutput.accept(ModItems.CALORIAN_SIGN.get());
                         pOutput.accept(ModItems.CALORIAN_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.MARS_SAND_PAPER.get());
                     })
                     .build());
 

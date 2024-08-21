@@ -5,6 +5,7 @@ import com.drd.northstar_extras.init.ModItems;
 import com.lightning.northstar.block.NorthstarBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
@@ -272,6 +273,11 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .define('#', ModBlocks.STRIPPED_CALORIAN_LOG.get())
                 .define('X', Tags.Items.RODS_WOODEN)
                 .unlockedBy(getHasName(ModBlocks.STRIPPED_CALORIAN_LOG.get()), has(ModBlocks.STRIPPED_CALORIAN_LOG.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MARS_SAND_PAPER.get())
+                .requires(NorthstarBlocks.MARS_SAND.get())
+                .requires(Items.PAPER)
+                .unlockedBy(getHasName(NorthstarBlocks.MARS_SAND.get()), has(NorthstarBlocks.MARS_SAND.get()))
                 .save(consumer);
     }
 }

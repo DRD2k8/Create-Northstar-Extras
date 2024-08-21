@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-20T19:32:50.3965453	Item Models: northstar_extras
+// 1.20.1	2024-08-20T21:20:49.0406854	Item Models: northstar_extras
 7223d31b2c77ea08aafa9d8b7e816974cf1b47b8 assets/northstar_extras/models/item/argyre_button.json
 b2347719b7da316e67e17faa5cd224c48a1f72a8 assets/northstar_extras/models/item/argyre_door.json
 1bfdb0acf4a1bce935ed4654da772e18a5f55ec7 assets/northstar_extras/models/item/argyre_fence.json
@@ -26,6 +26,7 @@ a55a8a1deb2a071365de67cfad567868c7cdbb43 assets/northstar_extras/models/item/coi
 3108c29b7229d14655d4063b1a6c368ff1d8bb07 assets/northstar_extras/models/item/coiler_sign.json
 019f26c02b2b38e2857526230ec1cdd8d015cbe3 assets/northstar_extras/models/item/coiler_trapdoor.json
 ed7fa39570892fb86e2aa27fadc4b3724564f511 assets/northstar_extras/models/item/coiler_wood.json
+20b174620e04a62cfe41f583bcba9a9bdf96f62c assets/northstar_extras/models/item/mars_sand_paper.json
 2858f54ce51350509845bcbdc573742f8dc030b6 assets/northstar_extras/models/item/stripped_argyre_wood.json
 049141c94eaf34c03ec7f8150fdf57e24e07e543 assets/northstar_extras/models/item/stripped_calorian_log.json
 a63fce5a2d2c8d953a4f499aac65eabece6b6b46 assets/northstar_extras/models/item/stripped_calorian_wood.json

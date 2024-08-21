@@ -61,6 +61,7 @@ public class ModItemModelGenerator extends ItemModelProvider {
         blockInventoryItem(ModBlocks.CALORIAN_BUTTON);
         simpleItem(ModItems.CALORIAN_SIGN);
         simpleItem(ModItems.CALORIAN_HANGING_SIGN);
+        simpleItem(ModItems.MARS_SAND_PAPER);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

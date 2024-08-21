@@ -7,6 +7,7 @@ import com.drd.northstar_extras.util.ModUtils;
 import com.drd.northstar_extras.util.ModWoodTypes;
 import com.lightning.northstar.block.NorthstarBlocks;
 import com.mojang.logging.LogUtils;
+import com.simibubi.create.foundation.data.CreateRegistrate;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
@@ -30,13 +31,13 @@ import java.util.concurrent.CompletableFuture;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(NorthstarExtras.MOD_ID)
 public class NorthstarExtras {
-    // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "northstar_extras";
-    // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
+    public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(MOD_ID);
 
     public NorthstarExtras() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        REGISTRATE.registerEventListeners(modEventBus);
 
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
