@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_right_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "northstar_extras:block/calorian_door_lower",
+    "top": "northstar_extras:block/calorian_door_upper"
+  }
+}

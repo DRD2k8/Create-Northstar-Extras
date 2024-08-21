@@ -1,0 +1,10 @@
+// 1.20.1	2024-08-20T19:32:50.3965453	Tags for minecraft:item mod id northstar_extras
+497494e60a9010aeda67d9fbf60c8fbfbb6717f4 data/minecraft/tags/items/fence_gates.json
+51bc982c094d7cd9328839cbfebbfdbfb078d7be data/minecraft/tags/items/hanging_signs.json
+6e77499de7beb910c8cc4c44a52e4e46f6b6aff4 data/minecraft/tags/items/logs.json
+60dce65761fc73a2c08946ca92503d28010adb87 data/minecraft/tags/items/signs.json
+c290992804a6a169deeaa48f46436bd5481b84fc data/minecraft/tags/items/wooden_buttons.json
+e05fbc09232ab6705229b85d9968424bdea070d1 data/minecraft/tags/items/wooden_doors.json
+846a1bd13780bdc094e520c387921eac30af3186 data/minecraft/tags/items/wooden_fences.json
+9044c50a2163246a01cda3ae7450ccd3aebcfab1 data/minecraft/tags/items/wooden_pressure_plates.json
+d22ecfe5983a813d06e75ee85c68b7b0222015aa data/minecraft/tags/items/wooden_trapdoors.json

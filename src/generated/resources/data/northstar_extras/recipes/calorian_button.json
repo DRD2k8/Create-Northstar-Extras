@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "northstar:calorian_planks"
+    }
+  ],
+  "result": {
+    "item": "northstar_extras:calorian_button"
+  }
+}

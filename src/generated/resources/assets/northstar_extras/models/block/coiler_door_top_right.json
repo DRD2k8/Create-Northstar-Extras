@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_right",
+  "render_type": "minecraft:solid",
+  "textures": {
+    "bottom": "northstar_extras:block/coiler_door_lower",
+    "top": "northstar_extras:block/coiler_door_upper"
+  }
+}
