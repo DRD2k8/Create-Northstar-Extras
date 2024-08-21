@@ -1,0 +1,14 @@
+{
+  "values": [
+    "northstar_extras:lead_block",
+    "northstar_extras:lead_sheetmetal",
+    "northstar_extras:lead_sheetmetal_slab",
+    "northstar_extras:lead_sheetmetal_vertical_slab",
+    "northstar_extras:lead_plating",
+    "northstar_extras:lead_plating_stairs",
+    "northstar_extras:lead_plating_slab",
+    "northstar_extras:lead_plating_vertical_slab",
+    "northstar_extras:lead_pillar",
+    "northstar_extras:lead_grate"
+  ]
+}

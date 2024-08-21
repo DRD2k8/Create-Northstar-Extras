@@ -1,17 +1,26 @@
 package com.drd.northstar_extras.datagen;
 
+import com.drd.northstar_extras.NorthstarExtras;
 import com.drd.northstar_extras.init.ModBlocks;
 import com.drd.northstar_extras.init.ModItems;
 import com.lightning.northstar.block.NorthstarBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.AbstractCookingRecipe;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.RecipeSerializer;
+import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
+import java.util.Iterator;
+import java.util.List;
 import java.util.function.Consumer;
 
 public class ModRecipeGenerator extends RecipeProvider implements IConditionBuilder {
+    private static final List<ItemLike> LEAD_SMELTABLES = List.of(ModItems.RAW_LEAD.get(), ModBlocks.VENUS_LEAD_ORE.get(), ModBlocks.VENUS_DEEP_LEAD_ORE.get());
+
     public ModRecipeGenerator(PackOutput pOutput) {
         super(pOutput);
     }
@@ -279,5 +288,119 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .requires(Items.PAPER)
                 .unlockedBy(getHasName(NorthstarBlocks.MARS_SAND.get()), has(NorthstarBlocks.MARS_SAND.get()))
                 .save(consumer);
+        oreSmelting(consumer, LEAD_SMELTABLES, RecipeCategory.MISC, ModItems.LEAD_INGOT.get(), 0.25f, 200, "item");
+        oreBlasting(consumer, LEAD_SMELTABLES, RecipeCategory.MISC, ModItems.LEAD_INGOT.get(), 0.25f, 100, "item");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_LEAD.get(), 9)
+                .requires(ModBlocks.RAW_LEAD_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.RAW_LEAD_BLOCK.get()), has(ModBlocks.RAW_LEAD_BLOCK.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_LEAD_BLOCK.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.RAW_LEAD.get())
+                .unlockedBy(getHasName(ModItems.RAW_LEAD.get()), has(ModItems.RAW_LEAD.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.LEAD_INGOT.get(), 9)
+                .requires(ModBlocks.LEAD_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.LEAD_BLOCK.get()), has(ModBlocks.LEAD_BLOCK.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAD_BLOCK.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.LEAD_INGOT.get())
+                .unlockedBy(getHasName(ModItems.LEAD_INGOT.get()), has(ModItems.LEAD_INGOT.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.LEAD_NUGGET.get(), 9)
+                .requires(ModItems.LEAD_INGOT.get())
+                .unlockedBy(getHasName(ModItems.LEAD_INGOT.get()), has(ModItems.LEAD_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.LEAD_INGOT.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.LEAD_NUGGET.get())
+                .unlockedBy(getHasName(ModItems.LEAD_NUGGET.get()), has(ModItems.LEAD_NUGGET.get()))
+                .save(consumer, NorthstarExtras.MOD_ID + ":lead_ingot_from_nuggets");
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAD_SHEETMETAL.get(), 4)
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModItems.LEAD_SHEET.get())
+                .unlockedBy(getHasName(ModItems.LEAD_SHEET.get()), has(ModItems.LEAD_SHEET.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAD_SHEETMETAL_SLAB.get(), 6)
+                .pattern("###")
+                .define('#', ModBlocks.LEAD_SHEETMETAL.get())
+                .unlockedBy(getHasName(ModItems.LEAD_SHEET.get()), has(ModItems.LEAD_SHEET.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAD_SHEETMETAL_VERTICAL_SLAB.get(), 6)
+                .pattern("#")
+                .pattern("#")
+                .pattern("#")
+                .define('#', ModBlocks.LEAD_SHEETMETAL.get())
+                .unlockedBy(getHasName(ModItems.LEAD_SHEET.get()), has(ModItems.LEAD_SHEET.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAD_PLATING.get(), 4)
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModItems.LEAD_INGOT.get())
+                .unlockedBy(getHasName(ModItems.LEAD_INGOT.get()), has(ModItems.LEAD_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAD_PLATING_STAIRS.get(), 4)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .define('#', ModBlocks.LEAD_PLATING.get())
+                .unlockedBy(getHasName(ModItems.LEAD_INGOT.get()), has(ModItems.LEAD_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAD_PLATING_SLAB.get(), 6)
+                .pattern("###")
+                .define('#', ModBlocks.LEAD_PLATING.get())
+                .unlockedBy(getHasName(ModItems.LEAD_INGOT.get()), has(ModItems.LEAD_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAD_PLATING_VERTICAL_SLAB.get(), 6)
+                .pattern("#")
+                .pattern("#")
+                .pattern("#")
+                .define('#', ModBlocks.LEAD_PLATING.get())
+                .unlockedBy(getHasName(ModItems.LEAD_INGOT.get()), has(ModItems.LEAD_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAD_PILLAR.get(), 2)
+                .pattern("#")
+                .pattern("#")
+                .define('#', ModItems.LEAD_INGOT.get())
+                .unlockedBy(getHasName(ModItems.LEAD_INGOT.get()), has(ModItems.LEAD_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAD_GRATE.get(), 5)
+                .pattern("# #")
+                .pattern(" # ")
+                .pattern("# #")
+                .define('#', ModItems.LEAD_SHEET.get())
+                .unlockedBy(getHasName(ModItems.LEAD_SHEET.get()), has(ModItems.LEAD_SHEET.get()))
+                .save(consumer);
+    }
+
+    protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
+        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.SMELTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTIme, pGroup, "_from_smelting");
+    }
+
+    protected static void oreBlasting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
+        oreCooking(pFinishedRecipeConsumer, RecipeSerializer.BLASTING_RECIPE, pIngredients, pCategory, pResult, pExperience, pCookingTime, pGroup, "_from_blasting");
+    }
+
+    protected static void oreCooking(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeSerializer<? extends AbstractCookingRecipe> pCookingSerializer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
+        Iterator var9 = pIngredients.iterator();
+
+        while(var9.hasNext()) {
+            ItemLike itemlike = (ItemLike)var9.next();
+            SimpleCookingRecipeBuilder.generic(Ingredient.of(new ItemLike[]{itemlike}), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike)).save(pFinishedRecipeConsumer, NorthstarExtras.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
+        }
+    }
+
+    protected static void stonecutting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, RecipeCategory category, ItemLike ingredient, ItemLike result, int count) {
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ingredient), category, result, count)
+                .unlockedBy(getHasName(ingredient), has(ingredient))
+                .save(pFinishedRecipeConsumer, NorthstarExtras.MOD_ID + ":" + getItemName(result) + "_from_" + getItemName(ingredient) + "_stonecutting");
     }
 }

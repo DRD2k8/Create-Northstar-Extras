@@ -62,6 +62,16 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.CALORIAN_SIGN);
         simpleItem(ModItems.CALORIAN_HANGING_SIGN);
         simpleItem(ModItems.MARS_SAND_PAPER);
+        simpleItem(ModItems.RAW_LEAD);
+        simpleItem(ModItems.LEAD_INGOT);
+        simpleItem(ModItems.LEAD_NUGGET);
+        simpleItem(ModItems.LEAD_SHEET);
+        evenSimplerBlockItem(ModBlocks.LEAD_SHEETMETAL_SLAB);
+        evenSimplerBlockItem(ModBlocks.LEAD_SHEETMETAL_VERTICAL_SLAB);
+        evenSimplerBlockItem(ModBlocks.LEAD_PLATING_STAIRS);
+        evenSimplerBlockItem(ModBlocks.LEAD_PLATING_SLAB);
+        evenSimplerBlockItem(ModBlocks.LEAD_PLATING_VERTICAL_SLAB);
+        evenSimplerBlockItem(ModBlocks.LEAD_PILLAR);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

@@ -1,9 +1,29 @@
-// 1.20.1	2024-08-20T21:20:49.0406854	Tags for minecraft:item mod id northstar_extras
+// 1.20.1	2024-08-21T14:28:43.1372739	Tags for minecraft:item mod id northstar_extras
 0422d521016fb2c92869f0b0e8adeb404d091c11 data/create/tags/items/sandpaper.json
+6e91791775bb7b3328cd565dff2efc44284b7c98 data/forge/tags/items/ingots.json
+5cc1e8a05cc083a9504f82b5873fd7da09c5d658 data/forge/tags/items/ingots/lead.json
+bfd4c054fe677f774f0aecefc5d33c4ffc26571c data/forge/tags/items/ingots/martian_steel.json
+35bbfd783f0f302234acd7b79f712d89da0b6e7e data/forge/tags/items/ingots/tungsten.json
+bc73b12e14579d37d07c26b027ed3a89260bd900 data/forge/tags/items/nuggets/lead.json
+b3393ed08f1e98100aa82a2247a3a4dd604ffbf6 data/forge/tags/items/nuggets/tungsten.json
+e668c1407bc6ce406f5655141bac5b3c0ac0bcea data/forge/tags/items/ores.json
+ab0d9910f4ad98c33945fb48600553e94677685e data/forge/tags/items/ores/lead.json
+15dedfe5941a349c2672fa7e86f1daacc92e31c1 data/forge/tags/items/ores/tungsten.json
+34940a3da07d19ca0a7990d8c13e169bc61d0107 data/forge/tags/items/plates/lead.json
+87644dec2ebae363491b077febbd846ab3c1084a data/forge/tags/items/plates/martian_steel.json
+b503d91a85d60971ad5d0a7f6d73216661315eb1 data/forge/tags/items/plates/tungsten.json
+e8e910dd4b6d71db2f050fa146f9fd4296929a93 data/forge/tags/items/raw_materials.json
+b31dd52098ca172cdb0a36396ec9597290d52f7c data/forge/tags/items/raw_materials/lead.json
+e1cb4b17dc8a6bee3663ab2058a5586d53665c40 data/forge/tags/items/raw_materials/tungsten.json
+ac5c0f2643742e2def1d17ba90ff5c21360b2c7a data/forge/tags/items/storage_blocks/lead.json
+e660d582836a3c0a3f28234c06ffba89e9103299 data/forge/tags/items/storage_blocks/martian_steel.json
+3bd729b5105b86c181d29139d67039bfe8b6f8d1 data/forge/tags/items/storage_blocks/tungsten.json
 497494e60a9010aeda67d9fbf60c8fbfbb6717f4 data/minecraft/tags/items/fence_gates.json
 51bc982c094d7cd9328839cbfebbfdbfb078d7be data/minecraft/tags/items/hanging_signs.json
-6e77499de7beb910c8cc4c44a52e4e46f6b6aff4 data/minecraft/tags/items/logs.json
+3f4881a3be0d72756742f1394ae63f2d6ef37e46 data/minecraft/tags/items/logs.json
 60dce65761fc73a2c08946ca92503d28010adb87 data/minecraft/tags/items/signs.json
+db0956b29dc2e38ccc7f6d3ec811d866a37a4852 data/minecraft/tags/items/slabs.json
+099d8cf23f56b16265c64ecfe664fb32c6d9e99a data/minecraft/tags/items/stairs.json
 c290992804a6a169deeaa48f46436bd5481b84fc data/minecraft/tags/items/wooden_buttons.json
 e05fbc09232ab6705229b85d9968424bdea070d1 data/minecraft/tags/items/wooden_doors.json
 846a1bd13780bdc094e520c387921eac30af3186 data/minecraft/tags/items/wooden_fences.json

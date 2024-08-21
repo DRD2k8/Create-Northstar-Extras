@@ -2,10 +2,12 @@ package com.drd.northstar_extras.datagen;
 
 import com.drd.northstar_extras.NorthstarExtras;
 import com.drd.northstar_extras.init.ModBlocks;
+import com.drd.northstar_extras.util.tag.ModBlockTags;
 import com.lightning.northstar.block.NorthstarBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
@@ -69,6 +71,49 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.WILTER_WALL_HANGING_SIGN.get())
                 .add(ModBlocks.ARGYRE_WALL_HANGING_SIGN.get())
                 .add(ModBlocks.CALORIAN_WALL_HANGING_SIGN.get());
+
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.VENUS_LEAD_ORE.get())
+                .add(ModBlocks.VENUS_DEEP_LEAD_ORE.get())
+                .add(ModBlocks.RAW_LEAD_BLOCK.get())
+                .add(ModBlocks.LEAD_BLOCK.get())
+                .add(ModBlocks.LEAD_SHEETMETAL.get())
+                .add(ModBlocks.LEAD_SHEETMETAL_SLAB.get())
+                .add(ModBlocks.LEAD_SHEETMETAL_VERTICAL_SLAB.get())
+                .add(ModBlocks.LEAD_PLATING.get())
+                .add(ModBlocks.LEAD_PLATING_STAIRS.get())
+                .add(ModBlocks.LEAD_PLATING_SLAB.get())
+                .add(ModBlocks.LEAD_PLATING_VERTICAL_SLAB.get())
+                .add(ModBlocks.LEAD_PILLAR.get())
+                .add(ModBlocks.LEAD_GRATE.get());
+
+        this.tag(ModBlockTags.MARTIAN_STEEL_BLOCKS)
+                .add(NorthstarBlocks.MARTIAN_STEEL_BLOCK.get());
+
+        this.tag(ModBlockTags.TUNGSTEN_BLOCKS)
+                .add(NorthstarBlocks.TUNGSTEN_BLOCK.get());
+
+        this.tag(ModBlockTags.LEAD_BLOCKS)
+                .add(ModBlocks.LEAD_BLOCK.get());
+
+        this.tag(Tags.Blocks.ORES)
+                .addTag(ModBlockTags.TUNGSTEN_ORES)
+                .addTag(ModBlockTags.LEAD_ORES);
+
+        this.tag(ModBlockTags.TUNGSTEN_ORES)
+                .add(NorthstarBlocks.MERCURY_TUNGSTEN_ORE.get())
+                .add(NorthstarBlocks.MERCURY_DEEP_TUNGSTEN_ORE.get());
+
+        this.tag(ModBlockTags.LEAD_ORES)
+                .add(ModBlocks.VENUS_LEAD_ORE.get())
+                .add(ModBlocks.VENUS_DEEP_LEAD_ORE.get());
+
+        this.tag(BlockTags.STAIRS)
+                .add(ModBlocks.LEAD_PLATING_STAIRS.get());
+
+        this.tag(BlockTags.SLABS)
+                .add(ModBlocks.LEAD_SHEETMETAL_SLAB.get())
+                .add(ModBlocks.LEAD_PLATING_SLAB.get());
 
         this.tag(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.COILER_FENCE.get())
@@ -141,5 +186,17 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.WILTER_WALL_HANGING_SIGN.get())
                 .add(ModBlocks.ARGYRE_WALL_HANGING_SIGN.get())
                 .add(ModBlocks.CALORIAN_WALL_HANGING_SIGN.get());
+
+        this.tag(ModBlockTags.TIER_4_HEAT_RESISTANCE)
+                .add(ModBlocks.LEAD_BLOCK.get())
+                .add(ModBlocks.LEAD_SHEETMETAL.get())
+                .add(ModBlocks.LEAD_SHEETMETAL_SLAB.get())
+                .add(ModBlocks.LEAD_SHEETMETAL_VERTICAL_SLAB.get())
+                .add(ModBlocks.LEAD_PLATING.get())
+                .add(ModBlocks.LEAD_PLATING_STAIRS.get())
+                .add(ModBlocks.LEAD_PLATING_SLAB.get())
+                .add(ModBlocks.LEAD_PLATING_VERTICAL_SLAB.get())
+                .add(ModBlocks.LEAD_PILLAR.get())
+                .add(ModBlocks.LEAD_GRATE.get());
     }
 }

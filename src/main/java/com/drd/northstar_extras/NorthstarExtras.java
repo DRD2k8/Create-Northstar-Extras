@@ -8,6 +8,8 @@ import com.drd.northstar_extras.util.ModWoodTypes;
 import com.lightning.northstar.block.NorthstarBlocks;
 import com.mojang.logging.LogUtils;
 import com.simibubi.create.foundation.data.CreateRegistrate;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
@@ -71,6 +73,8 @@ public class NorthstarExtras {
             Sheets.addWoodType(ModWoodTypes.WILTER);
             Sheets.addWoodType(ModWoodTypes.ARGYRE);
             Sheets.addWoodType(ModWoodTypes.CALORIAN);
+
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.LEAD_GRATE.get(), RenderType.cutout());
         }
     }
 

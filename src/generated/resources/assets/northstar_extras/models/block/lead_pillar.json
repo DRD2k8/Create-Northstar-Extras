@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "northstar_extras:block/lead_pillar_top",
+    "side": "northstar_extras:block/lead_pillar"
+  }
+}

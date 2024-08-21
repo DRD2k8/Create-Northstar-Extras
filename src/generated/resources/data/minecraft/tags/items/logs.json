@@ -1,5 +1,11 @@
 {
   "values": [
+    "northstar:argyre_log",
+    "northstar:stripped_argyre_log",
+    "northstar:coiler_log",
+    "northstar:stripped_coiler_log",
+    "northstar:wilter_log",
+    "northstar:stripped_wilter_log",
     "northstar:calorian_log",
     "northstar_extras:stripped_calorian_log",
     "northstar_extras:argyre_wood",

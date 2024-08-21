@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "northstar_extras:raw_lead_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "northstar_extras:raw_lead"
+  }
+}

@@ -85,6 +85,23 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.CALORIAN_HANGING_SIGN.get()));
         this.add(ModBlocks.CALORIAN_WALL_HANGING_SIGN.get(), block ->
                 createSingleItemTable(ModItems.CALORIAN_HANGING_SIGN.get()));
+        this.add(ModBlocks.VENUS_LEAD_ORE.get(), createOreDrop(ModBlocks.VENUS_LEAD_ORE.get(), ModItems.RAW_LEAD.get()));
+        this.add(ModBlocks.VENUS_DEEP_LEAD_ORE.get(), createOreDrop(ModBlocks.VENUS_DEEP_LEAD_ORE.get(), ModItems.RAW_LEAD.get()));
+        this.dropSelf(ModBlocks.RAW_LEAD_BLOCK.get());
+        this.dropSelf(ModBlocks.LEAD_BLOCK.get());
+        this.dropSelf(ModBlocks.LEAD_SHEETMETAL.get());
+        this.add(ModBlocks.LEAD_SHEETMETAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.LEAD_SHEETMETAL_SLAB.get()));
+        this.add(ModBlocks.LEAD_SHEETMETAL_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.LEAD_SHEETMETAL_VERTICAL_SLAB.get()));
+        this.dropSelf(ModBlocks.LEAD_PLATING.get());
+        this.dropSelf(ModBlocks.LEAD_PLATING_STAIRS.get());
+        this.add(ModBlocks.LEAD_PLATING_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.LEAD_PLATING_SLAB.get()));
+        this.add(ModBlocks.LEAD_PLATING_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.LEAD_PLATING_VERTICAL_SLAB.get()));
+        this.dropSelf(ModBlocks.LEAD_PILLAR.get());
+        this.dropSelf(ModBlocks.LEAD_GRATE.get());
     }
 
     @Override

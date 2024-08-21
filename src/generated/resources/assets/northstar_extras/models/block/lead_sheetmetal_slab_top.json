@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "northstar_extras:block/lead_sheetmetal",
+    "side": "northstar_extras:block/lead_sheetmetal",
+    "top": "northstar_extras:block/lead_sheetmetal"
+  }
+}

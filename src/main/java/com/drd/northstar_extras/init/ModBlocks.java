@@ -3,8 +3,11 @@ package com.drd.northstar_extras.init;
 import com.drd.northstar_extras.NorthstarExtras;
 import com.drd.northstar_extras.block.*;
 import com.drd.northstar_extras.util.ModWoodTypes;
+import com.lightning.northstar.block.GrateBlock;
 import com.lightning.northstar.block.LogBlock;
 import com.lightning.northstar.block.NorthstarBlocks;
+import com.lightning.northstar.block.VerticalSlabBlock;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -128,6 +131,32 @@ public class ModBlocks {
             () -> new CustomCeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.CALORIAN));
     public static final RegistryObject<Block> CALORIAN_WALL_HANGING_SIGN = BLOCKS.register("calorian_wall_hanging_sign",
             () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.CALORIAN));
+    public static final RegistryObject<Block> VENUS_LEAD_ORE = registerBlock("venus_lead_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).mapColor(MapColor.TERRACOTTA_YELLOW).strength(6.0F, 20.0F).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
+    public static final RegistryObject<Block> VENUS_DEEP_LEAD_ORE = registerBlock("venus_deep_lead_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).mapColor(MapColor.TERRACOTTA_YELLOW).strength(7.0F, 20.0F).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
+    public static final RegistryObject<Block> RAW_LEAD_BLOCK = registerBlock("raw_lead_block",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.DEEPSLATE).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LEAD_BLOCK = registerBlock("lead_block",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.DEEPSLATE).strength(30.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LEAD_SHEETMETAL = registerBlock("lead_sheetmetal",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.DEEPSLATE).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LEAD_SHEETMETAL_SLAB = registerBlock("lead_sheetmetal_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.DEEPSLATE).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LEAD_SHEETMETAL_VERTICAL_SLAB = registerBlock("lead_sheetmetal_vertical_slab",
+            () -> new VerticalSlabBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.DEEPSLATE).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LEAD_PLATING = registerBlock("lead_plating",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.DEEPSLATE).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LEAD_PLATING_STAIRS = registerBlock("lead_plating_stairs",
+            () -> new StairBlock(((Block) LEAD_PLATING.get()).defaultBlockState(), BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.DEEPSLATE).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LEAD_PLATING_SLAB = registerBlock("lead_plating_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.DEEPSLATE).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LEAD_PLATING_VERTICAL_SLAB = registerBlock("lead_plating_vertical_slab",
+            () -> new VerticalSlabBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.DEEPSLATE).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LEAD_PILLAR = registerBlock("lead_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.DEEPSLATE).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> LEAD_GRATE = registerBlock("lead_grate",
+            () -> new GrateBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.DEEPSLATE).strength(5.0F, 16.0F).requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -48,8 +48,25 @@
   "block.northstar_extras.argyre_wall_hanging_sign": "Argyre Wall Hanging Sign",
   "block.northstar_extras.calorian_hanging_sign": "Calorian Hanging Sign",
   "block.northstar_extras.calorian_wall_hanging_sign": "Calorian Wall Hanging Sign",
+  "block.northstar_extras.venus_lead_ore": "Venus Lead Ore",
+  "block.northstar_extras.venus_deep_lead_ore": "Venus Deep Lead Ore",
+  "block.northstar_extras.raw_lead_block": "Block of Raw Lead",
+  "block.northstar_extras.lead_block": "Block of Lead",
+  "block.northstar_extras.lead_sheetmetal": "Lead Sheetmetal",
+  "block.northstar_extras.lead_sheetmetal_slab": "Lead Sheetmetal Slab",
+  "block.northstar_extras.lead_sheetmetal_vertical_slab": "Lead Sheetmetal Vertical Slab",
+  "block.northstar_extras.lead_plating": "Lead Plating",
+  "block.northstar_extras.lead_plating_stairs": "Lead Plating Stairs",
+  "block.northstar_extras.lead_plating_slab": "Lead Plating Slab",
+  "block.northstar_extras.lead_plating_vertical_slab": "Lead Plating Vertical Slab",
+  "block.northstar_extras.lead_pillar": "Lead Pillar",
+  "block.northstar_extras.lead_grate": "Lead Grate",
 
   "item.northstar_extras.mars_sand_paper": "Mars Sand Paper",
+  "item.northstar_extras.raw_lead": "Raw Lead",
+  "item.northstar_extras.lead_ingot": "Lead Ingot",
+  "item.northstar_extras.lead_nugget": "Lead Nugget",
+  "item.northstar_extras.lead_sheet": "Lead Sheet",
 
   "itemGroup.northstar_extras": "Northstar Extras"
 }

@@ -1,8 +1,17 @@
-// 1.20.1	2024-08-20T17:36:42.4138238	Tags for minecraft:block mod id northstar_extras
+// 1.20.1	2024-08-21T13:27:50.4052218	Tags for minecraft:block mod id northstar_extras
+e668c1407bc6ce406f5655141bac5b3c0ac0bcea data/forge/tags/blocks/ores.json
+ab0d9910f4ad98c33945fb48600553e94677685e data/forge/tags/blocks/ores/lead.json
+15dedfe5941a349c2672fa7e86f1daacc92e31c1 data/forge/tags/blocks/ores/tungsten.json
+ac5c0f2643742e2def1d17ba90ff5c21360b2c7a data/forge/tags/blocks/storage_blocks/lead.json
+e660d582836a3c0a3f28234c06ffba89e9103299 data/forge/tags/blocks/storage_blocks/martian_steel.json
+3bd729b5105b86c181d29139d67039bfe8b6f8d1 data/forge/tags/blocks/storage_blocks/tungsten.json
 51bc982c094d7cd9328839cbfebbfdbfb078d7be data/minecraft/tags/blocks/ceiling_hanging_signs.json
 497494e60a9010aeda67d9fbf60c8fbfbb6717f4 data/minecraft/tags/blocks/fence_gates.json
 6e77499de7beb910c8cc4c44a52e4e46f6b6aff4 data/minecraft/tags/blocks/logs.json
 6bdc4c0f60c04def4fc443c37f755ca776efd45e data/minecraft/tags/blocks/mineable/axe.json
+3e59a322a8430b8c8a1c37c13d561fabbec66f06 data/minecraft/tags/blocks/mineable/pickaxe.json
+db0956b29dc2e38ccc7f6d3ec811d866a37a4852 data/minecraft/tags/blocks/slabs.json
+099d8cf23f56b16265c64ecfe664fb32c6d9e99a data/minecraft/tags/blocks/stairs.json
 60dce65761fc73a2c08946ca92503d28010adb87 data/minecraft/tags/blocks/standing_signs.json
 ad349fecd02cb608b95e6b8863ab589203b6938f data/minecraft/tags/blocks/wall_hanging_signs.json
 da24f98795a5c08d2e5ca19df1e1bf300237d3aa data/minecraft/tags/blocks/wall_signs.json
@@ -11,3 +20,4 @@ e05fbc09232ab6705229b85d9968424bdea070d1 data/minecraft/tags/blocks/wooden_doors
 846a1bd13780bdc094e520c387921eac30af3186 data/minecraft/tags/blocks/wooden_fences.json
 9044c50a2163246a01cda3ae7450ccd3aebcfab1 data/minecraft/tags/blocks/wooden_pressure_plates.json
 d22ecfe5983a813d06e75ee85c68b7b0222015aa data/minecraft/tags/blocks/wooden_trapdoors.json
+62fdd2f48ba0e8f41df0c1f21b82030f3cc88245 data/northstar_extras/tags/blocks/tier_4_heat_resistance.json

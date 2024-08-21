@@ -32,6 +32,14 @@ public class ModItems {
             () -> new HangingSignItem(ModBlocks.CALORIAN_HANGING_SIGN.get(), ModBlocks.CALORIAN_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
     public static final RegistryObject<Item> MARS_SAND_PAPER = ITEMS.register("mars_sand_paper",
             () -> new SandPaperItem(new Item.Properties().defaultDurability(512)));
+    public static final RegistryObject<Item> RAW_LEAD = ITEMS.register("raw_lead",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LEAD_INGOT = ITEMS.register("lead_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LEAD_NUGGET = ITEMS.register("lead_nugget",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> LEAD_SHEET = ITEMS.register("lead_sheet",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

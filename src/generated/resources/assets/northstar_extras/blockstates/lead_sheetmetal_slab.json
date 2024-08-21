@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "northstar_extras:block/lead_sheetmetal_slab"
+    },
+    "type=double": {
+      "model": "northstar_extras:block/lead_sheetmetal"
+    },
+    "type=top": {
+      "model": "northstar_extras:block/lead_sheetmetal_slab_top"
+    }
+  }
+}

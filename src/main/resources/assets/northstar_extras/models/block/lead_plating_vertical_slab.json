@@ -1,0 +1,8 @@
+{
+  "parent": "northstar:block/vertical_slab",
+  "textures": {
+    "bottom": "northstar_extras:block/lead_plating",
+    "side": "northstar_extras:block/lead_plating",
+    "top": "northstar_extras:block/lead_plating"
+  }
+}

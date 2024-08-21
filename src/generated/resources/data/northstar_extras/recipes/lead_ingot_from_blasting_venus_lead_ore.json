@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "item",
+  "ingredient": {
+    "item": "northstar_extras:venus_lead_ore"
+  },
+  "result": "northstar_extras:lead_ingot"
+}

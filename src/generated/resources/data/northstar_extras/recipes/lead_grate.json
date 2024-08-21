@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "northstar_extras:lead_sheet"
+    }
+  },
+  "pattern": [
+    "# #",
+    " # ",
+    "# #"
+  ],
+  "result": {
+    "count": 5,
+    "item": "northstar_extras:lead_grate"
+  },
+  "show_notification": true
+}

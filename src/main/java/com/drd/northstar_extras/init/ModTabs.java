@@ -1,7 +1,6 @@
 package com.drd.northstar_extras.init;
 
 import com.drd.northstar_extras.NorthstarExtras;
-import com.lightning.northstar.item.NorthstarItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -15,7 +14,7 @@ public class ModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, NorthstarExtras.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> NORTHSTAR_EXTRAS_TAB = TABS.register("northstar_extras_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(NorthstarItems.TUNGSTEN_INGOT.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.LEAD_INGOT.get()))
                     .title(Component.translatable("itemGroup.northstar_extras"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModBlocks.ARGYRE_WOOD.get());
@@ -60,6 +59,23 @@ public class ModTabs {
                         pOutput.accept(ModItems.CALORIAN_SIGN.get());
                         pOutput.accept(ModItems.CALORIAN_HANGING_SIGN.get());
                         pOutput.accept(ModItems.MARS_SAND_PAPER.get());
+                        pOutput.accept(ModBlocks.VENUS_LEAD_ORE.get());
+                        pOutput.accept(ModBlocks.VENUS_DEEP_LEAD_ORE.get());
+                        pOutput.accept(ModItems.RAW_LEAD.get());
+                        pOutput.accept(ModItems.LEAD_INGOT.get());
+                        pOutput.accept(ModItems.LEAD_NUGGET.get());
+                        pOutput.accept(ModItems.LEAD_SHEET.get());
+                        pOutput.accept(ModBlocks.RAW_LEAD_BLOCK.get());
+                        pOutput.accept(ModBlocks.LEAD_BLOCK.get());
+                        pOutput.accept(ModBlocks.LEAD_SHEETMETAL.get());
+                        pOutput.accept(ModBlocks.LEAD_SHEETMETAL_SLAB.get());
+                        pOutput.accept(ModBlocks.LEAD_SHEETMETAL_VERTICAL_SLAB.get());
+                        pOutput.accept(ModBlocks.LEAD_PLATING.get());
+                        pOutput.accept(ModBlocks.LEAD_PLATING_STAIRS.get());
+                        pOutput.accept(ModBlocks.LEAD_PLATING_SLAB.get());
+                        pOutput.accept(ModBlocks.LEAD_PLATING_VERTICAL_SLAB.get());
+                        pOutput.accept(ModBlocks.LEAD_PILLAR.get());
+                        pOutput.accept(ModBlocks.LEAD_GRATE.get());
                     })
                     .build());
 
