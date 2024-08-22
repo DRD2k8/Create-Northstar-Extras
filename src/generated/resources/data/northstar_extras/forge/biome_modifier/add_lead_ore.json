@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#northstar_extras:venus_biomes",
+  "features": "northstar_extras:venus/lead_ore",
+  "step": "underground_ores"
+}

@@ -74,7 +74,7 @@ public class NorthstarExtras {
             Sheets.addWoodType(ModWoodTypes.ARGYRE);
             Sheets.addWoodType(ModWoodTypes.CALORIAN);
 
-            ItemBlockRenderTypes.setRenderLayer(ModBlocks.LEAD_GRATE.get(), RenderType.cutout());
+            ItemBlockRenderTypes.setRenderLayer((Block) ModBlocks.LEAD_GRATE.get(), RenderType.cutout());
         }
     }
 
@@ -96,6 +96,8 @@ public class NorthstarExtras {
             ModBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
                     new ModBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));
             generator.addProvider(event.includeServer(), new ModItemTagGenerator(packOutput, lookupProvider, blockTagGenerator.contentsGetter(), existingFileHelper));
+
+            generator.addProvider(event.includeServer(), new ModWorldGenerator(packOutput, lookupProvider));
         }
     }
 }
