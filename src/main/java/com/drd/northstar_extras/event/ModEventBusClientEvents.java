@@ -1,7 +1,7 @@
 package com.drd.northstar_extras.event;
 
 import com.drd.northstar_extras.NorthstarExtras;
-import com.drd.northstar_extras.block.entity.ModBlockEntities;
+import com.drd.northstar_extras.init.ModBlockEntities;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraftforge.api.distmarker.Dist;

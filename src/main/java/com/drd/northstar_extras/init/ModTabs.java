@@ -59,6 +59,8 @@ public class ModTabs {
                         pOutput.accept(ModItems.CALORIAN_SIGN.get());
                         pOutput.accept(ModItems.CALORIAN_HANGING_SIGN.get());
                         pOutput.accept(ModItems.MARS_SAND_PAPER.get());
+
+                        // Venus
                         pOutput.accept(ModBlocks.VENUS_LEAD_ORE.get());
                         pOutput.accept(ModBlocks.VENUS_DEEP_LEAD_ORE.get());
                         pOutput.accept(ModItems.RAW_LEAD.get());
@@ -76,6 +78,35 @@ public class ModTabs {
                         pOutput.accept(ModBlocks.LEAD_PLATING_VERTICAL_SLAB.get());
                         pOutput.accept(ModBlocks.LEAD_PILLAR.get());
                         pOutput.accept(ModBlocks.LEAD_GRATE.get());
+
+                        // Jupiter
+                        pOutput.accept(ModBlocks.JUPITER_STONE.get());
+                        pOutput.accept(ModBlocks.JUPITER_DEEP_STONE.get());
+                        pOutput.accept(ModBlocks.JUPITER_STONE_BRICKS.get());
+                        pOutput.accept(ModBlocks.JUPITER_STONE_BRICK_STAIRS.get());
+                        pOutput.accept(ModBlocks.JUPITER_STONE_BRICK_SLAB.get());
+                        pOutput.accept(ModBlocks.JUPITER_STONE_BRICK_VERTICAL_SLAB.get());
+                        pOutput.accept(ModBlocks.JUPITER_STONE_BRICK_WALL.get());
+                        pOutput.accept(ModBlocks.JUPITER_STONE_PILLAR.get());
+                        pOutput.accept(ModBlocks.CHISELED_JUPITER_STONE.get());
+                        pOutput.accept(ModBlocks.POLISHED_JUPITER_STONE.get());
+                        pOutput.accept(ModBlocks.JUPITER_STONE_LAMP.get());
+                        pOutput.accept(ModBlocks.JUPITER_IRON_ORE.get());
+                        pOutput.accept(ModBlocks.JUPITER_COPPER_ORE.get());
+                        pOutput.accept(ModBlocks.JUPITER_GOLD_ORE.get());
+                        pOutput.accept(ModBlocks.JUPITER_DIAMOND_ORE.get());
+                        pOutput.accept(ModBlocks.JUPITER_REDSTONE_ORE.get());
+                        pOutput.accept(ModBlocks.JUPITER_QUARTZ_ORE.get());
+                        pOutput.accept(ModBlocks.JUPITER_ZINC_ORE.get());
+                        pOutput.accept(ModBlocks.JUPITER_GLOWSTONE_ORE.get());
+                        pOutput.accept(ModBlocks.JUPITER_DEEP_IRON_ORE.get());
+                        pOutput.accept(ModBlocks.JUPITER_DEEP_COPPER_ORE.get());
+                        pOutput.accept(ModBlocks.JUPITER_DEEP_GOLD_ORE.get());
+                        pOutput.accept(ModBlocks.JUPITER_DEEP_DIAMOND_ORE.get());
+                        pOutput.accept(ModBlocks.JUPITER_DEEP_REDSTONE_ORE.get());
+                        pOutput.accept(ModBlocks.JUPITER_DEEP_QUARTZ_ORE.get());
+                        pOutput.accept(ModBlocks.JUPITER_DEEP_ZINC_ORE.get());
+                        pOutput.accept(ModBlocks.JUPITER_DEEP_GLOWSTONE_ORE.get());
                     })
                     .build());
 

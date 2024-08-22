@@ -87,11 +87,22 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.VENUS_DEEP_LEAD_ORE.get().asItem());
 
         this.tag(ItemTags.STAIRS)
-                .add(ModBlocks.LEAD_PLATING_STAIRS.get().asItem());
+                // Venus
+                .add(ModBlocks.LEAD_PLATING_STAIRS.get().asItem())
+
+                // Jupiter
+                .add(ModBlocks.JUPITER_STONE_BRICK_STAIRS.get().asItem());
 
         this.tag(ItemTags.SLABS)
+                // Venus
                 .add(ModBlocks.LEAD_SHEETMETAL_SLAB.get().asItem())
-                .add(ModBlocks.LEAD_PLATING_SLAB.get().asItem());
+                .add(ModBlocks.LEAD_PLATING_SLAB.get().asItem())
+
+                // Jupiter
+                .add(ModBlocks.JUPITER_STONE_BRICK_SLAB.get().asItem());
+
+        this.tag(ItemTags.WALLS)
+                .add(ModBlocks.JUPITER_STONE_BRICK_WALL.get().asItem());
 
         this.tag(ItemTags.WOODEN_FENCES)
                 .add(ModBlocks.COILER_FENCE.get().asItem())
@@ -161,5 +172,61 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(AllTags.AllItemTags.SANDPAPER.tag)
                 .add(ModItems.MARS_SAND_PAPER.get());
+
+        this.tag(Tags.Items.ORES_IRON)
+                .add(ModBlocks.JUPITER_IRON_ORE.get().asItem())
+                .add(ModBlocks.JUPITER_DEEP_IRON_ORE.get().asItem());
+
+        this.tag(Tags.Items.ORES_COPPER)
+                .add(ModBlocks.JUPITER_COPPER_ORE.get().asItem())
+                .add(ModBlocks.JUPITER_DEEP_COPPER_ORE.get().asItem());
+
+        this.tag(Tags.Items.ORES_GOLD)
+                .add(ModBlocks.JUPITER_GOLD_ORE.get().asItem())
+                .add(ModBlocks.JUPITER_DEEP_GOLD_ORE.get().asItem());
+
+        this.tag(Tags.Items.ORES_DIAMOND)
+                .add(ModBlocks.JUPITER_DIAMOND_ORE.get().asItem())
+                .add(ModBlocks.JUPITER_DEEP_DIAMOND_ORE.get().asItem());
+
+        this.tag(Tags.Items.ORES_REDSTONE)
+                .add(ModBlocks.JUPITER_REDSTONE_ORE.get().asItem())
+                .add(ModBlocks.JUPITER_DEEP_REDSTONE_ORE.get().asItem());
+
+        this.tag(Tags.Items.ORES_QUARTZ)
+                .add(ModBlocks.JUPITER_QUARTZ_ORE.get().asItem())
+                .add(ModBlocks.JUPITER_DEEP_QUARTZ_ORE.get().asItem());
+
+        this.tag(ModItemTags.ZINC_ORES)
+                .add(ModBlocks.JUPITER_ZINC_ORE.get().asItem())
+                .add(ModBlocks.JUPITER_DEEP_ZINC_ORE.get().asItem());
+
+        this.tag(ModItemTags.GLOWSTONE_ORES)
+                .add(ModBlocks.JUPITER_GLOWSTONE_ORE.get().asItem())
+                .add(ModBlocks.JUPITER_DEEP_GLOWSTONE_ORE.get().asItem());
+
+        this.tag(ItemTags.STONE_CRAFTING_MATERIALS)
+                .add(NorthstarBlocks.MOON_STONE.get().asItem())
+                .add(NorthstarBlocks.MOON_DEEP_STONE.get().asItem())
+                .add(NorthstarBlocks.MARS_STONE.get().asItem())
+                .add(NorthstarBlocks.MARS_DEEP_STONE.get().asItem())
+                .add(NorthstarBlocks.MERCURY_STONE.get().asItem())
+                .add(NorthstarBlocks.MERCURY_DEEP_STONE.get().asItem())
+                .add(NorthstarBlocks.VENUS_STONE.get().asItem())
+                .add(NorthstarBlocks.VENUS_DEEP_STONE.get().asItem())
+                .add(ModBlocks.JUPITER_STONE.get().asItem())
+                .add(ModBlocks.JUPITER_DEEP_STONE.get().asItem());
+
+        this.tag(ItemTags.STONE_TOOL_MATERIALS)
+                .add(NorthstarBlocks.MOON_STONE.get().asItem())
+                .add(NorthstarBlocks.MOON_DEEP_STONE.get().asItem())
+                .add(NorthstarBlocks.MARS_STONE.get().asItem())
+                .add(NorthstarBlocks.MARS_DEEP_STONE.get().asItem())
+                .add(NorthstarBlocks.MERCURY_STONE.get().asItem())
+                .add(NorthstarBlocks.MERCURY_DEEP_STONE.get().asItem())
+                .add(NorthstarBlocks.VENUS_STONE.get().asItem())
+                .add(NorthstarBlocks.VENUS_DEEP_STONE.get().asItem())
+                .add(ModBlocks.JUPITER_STONE.get().asItem())
+                .add(ModBlocks.JUPITER_DEEP_STONE.get().asItem());
     }
 }

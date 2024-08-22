@@ -6,6 +6,8 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
 public class ModItemTags {
+    public static final TagKey<Item> ZINC_ORES = tag("forge", "ores/zinc");
+    public static final TagKey<Item> GLOWSTONE_ORES = tag("forge", "ores/glowstone");
     public static final TagKey<Item> MARTIAN_STEEL_INGOTS = tag("forge", "ingots/martian_steel");
     public static final TagKey<Item> MARTIAN_STEEL_PLATES = tag("forge", "plates/martian_steel");
     public static final TagKey<Item> MARTIAN_STEEL_BLOCKS = tag("forge", "storage_blocks/martian_steel");

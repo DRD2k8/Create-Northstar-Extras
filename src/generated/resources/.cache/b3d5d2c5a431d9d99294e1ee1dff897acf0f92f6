@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-21T13:06:44.262659	Item Models: northstar_extras
+// 1.20.1	2024-08-22T13:21:33.6498176	Item Models: northstar_extras
 7223d31b2c77ea08aafa9d8b7e816974cf1b47b8 assets/northstar_extras/models/item/argyre_button.json
 b2347719b7da316e67e17faa5cd224c48a1f72a8 assets/northstar_extras/models/item/argyre_door.json
 1bfdb0acf4a1bce935ed4654da772e18a5f55ec7 assets/northstar_extras/models/item/argyre_fence.json
@@ -26,6 +26,11 @@ a55a8a1deb2a071365de67cfad567868c7cdbb43 assets/northstar_extras/models/item/coi
 3108c29b7229d14655d4063b1a6c368ff1d8bb07 assets/northstar_extras/models/item/coiler_sign.json
 019f26c02b2b38e2857526230ec1cdd8d015cbe3 assets/northstar_extras/models/item/coiler_trapdoor.json
 ed7fa39570892fb86e2aa27fadc4b3724564f511 assets/northstar_extras/models/item/coiler_wood.json
+1559f8ffd9f9312379baa0ca884946cd43c14cef assets/northstar_extras/models/item/jupiter_stone_brick_slab.json
+abb8dfae726fb942f62d003c3254133a57da8eee assets/northstar_extras/models/item/jupiter_stone_brick_stairs.json
+ee500ac1195f467c0e9f8f857cde42bcd99b48c3 assets/northstar_extras/models/item/jupiter_stone_brick_vertical_slab.json
+e8e6e348618cec04b39a65ef59fb18ad2b4b0158 assets/northstar_extras/models/item/jupiter_stone_brick_wall.json
+1bbebda88715c5f3310e21786bc50195fc7cd9d6 assets/northstar_extras/models/item/jupiter_stone_pillar.json
 66ed2a4bb4aad129baa7b1a8c411808d29f5ae68 assets/northstar_extras/models/item/lead_ingot.json
 690e7009b37c61e19082fa238c2820f1370b35eb assets/northstar_extras/models/item/lead_nugget.json
 f97e4da95505cdc3fe845904289d57a3463c8e73 assets/northstar_extras/models/item/lead_pillar.json

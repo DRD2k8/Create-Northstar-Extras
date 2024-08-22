@@ -1,6 +1,6 @@
 package com.drd.northstar_extras;
 
-import com.drd.northstar_extras.block.entity.ModBlockEntities;
+import com.drd.northstar_extras.init.ModBlockEntities;
 import com.drd.northstar_extras.datagen.*;
 import com.drd.northstar_extras.init.*;
 import com.drd.northstar_extras.util.ModUtils;

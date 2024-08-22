@@ -62,6 +62,8 @@ public class ModItemModelGenerator extends ItemModelProvider {
         simpleItem(ModItems.CALORIAN_SIGN);
         simpleItem(ModItems.CALORIAN_HANGING_SIGN);
         simpleItem(ModItems.MARS_SAND_PAPER);
+
+        // Venus
         simpleItem(ModItems.RAW_LEAD);
         simpleItem(ModItems.LEAD_INGOT);
         simpleItem(ModItems.LEAD_NUGGET);
@@ -72,6 +74,13 @@ public class ModItemModelGenerator extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.LEAD_PLATING_SLAB);
         evenSimplerBlockItem(ModBlocks.LEAD_PLATING_VERTICAL_SLAB);
         evenSimplerBlockItem(ModBlocks.LEAD_PILLAR);
+
+        // Jupiter
+        evenSimplerBlockItem(ModBlocks.JUPITER_STONE_BRICK_STAIRS);
+        evenSimplerBlockItem(ModBlocks.JUPITER_STONE_BRICK_SLAB);
+        evenSimplerBlockItem(ModBlocks.JUPITER_STONE_BRICK_VERTICAL_SLAB);
+        blockInventoryItem(ModBlocks.JUPITER_STONE_BRICK_WALL);
+        evenSimplerBlockItem(ModBlocks.JUPITER_STONE_PILLAR);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

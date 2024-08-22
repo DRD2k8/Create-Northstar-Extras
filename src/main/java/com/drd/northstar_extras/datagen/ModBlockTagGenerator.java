@@ -73,6 +73,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CALORIAN_WALL_HANGING_SIGN.get());
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                // Venus
                 .add(ModBlocks.VENUS_LEAD_ORE.get())
                 .add(ModBlocks.VENUS_DEEP_LEAD_ORE.get())
                 .add(ModBlocks.RAW_LEAD_BLOCK.get())
@@ -85,7 +86,36 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.LEAD_PLATING_SLAB.get())
                 .add(ModBlocks.LEAD_PLATING_VERTICAL_SLAB.get())
                 .add(ModBlocks.LEAD_PILLAR.get())
-                .add(ModBlocks.LEAD_GRATE.get());
+                .add(ModBlocks.LEAD_GRATE.get())
+
+                // Jupiter
+                .add(ModBlocks.JUPITER_STONE.get())
+                .add(ModBlocks.JUPITER_DEEP_STONE.get())
+                .add(ModBlocks.JUPITER_STONE_BRICKS.get())
+                .add(ModBlocks.JUPITER_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.JUPITER_STONE_BRICK_SLAB.get())
+                .add(ModBlocks.JUPITER_STONE_BRICK_VERTICAL_SLAB.get())
+                .add(ModBlocks.JUPITER_STONE_BRICK_WALL.get())
+                .add(ModBlocks.JUPITER_STONE_PILLAR.get())
+                .add(ModBlocks.CHISELED_JUPITER_STONE.get())
+                .add(ModBlocks.POLISHED_JUPITER_STONE.get())
+                .add(ModBlocks.JUPITER_STONE_LAMP.get())
+                .add(ModBlocks.JUPITER_IRON_ORE.get())
+                .add(ModBlocks.JUPITER_COPPER_ORE.get())
+                .add(ModBlocks.JUPITER_GOLD_ORE.get())
+                .add(ModBlocks.JUPITER_DIAMOND_ORE.get())
+                .add(ModBlocks.JUPITER_REDSTONE_ORE.get())
+                .add(ModBlocks.JUPITER_QUARTZ_ORE.get())
+                .add(ModBlocks.JUPITER_ZINC_ORE.get())
+                .add(ModBlocks.JUPITER_GLOWSTONE_ORE.get())
+                .add(ModBlocks.JUPITER_DEEP_IRON_ORE.get())
+                .add(ModBlocks.JUPITER_DEEP_COPPER_ORE.get())
+                .add(ModBlocks.JUPITER_DEEP_GOLD_ORE.get())
+                .add(ModBlocks.JUPITER_DEEP_DIAMOND_ORE.get())
+                .add(ModBlocks.JUPITER_DEEP_REDSTONE_ORE.get())
+                .add(ModBlocks.JUPITER_DEEP_QUARTZ_ORE.get())
+                .add(ModBlocks.JUPITER_DEEP_ZINC_ORE.get())
+                .add(ModBlocks.JUPITER_DEEP_GLOWSTONE_ORE.get());
 
         this.tag(ModBlockTags.MARTIAN_STEEL_BLOCKS)
                 .add(NorthstarBlocks.MARTIAN_STEEL_BLOCK.get());
@@ -109,11 +139,29 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.VENUS_DEEP_LEAD_ORE.get());
 
         this.tag(BlockTags.STAIRS)
-                .add(ModBlocks.LEAD_PLATING_STAIRS.get());
+                // Venus
+                .add(ModBlocks.LEAD_PLATING_STAIRS.get())
+
+                // Jupiter
+                .add(ModBlocks.JUPITER_STONE_BRICK_STAIRS.get());
 
         this.tag(BlockTags.SLABS)
+                // Venus
                 .add(ModBlocks.LEAD_SHEETMETAL_SLAB.get())
-                .add(ModBlocks.LEAD_PLATING_SLAB.get());
+                .add(ModBlocks.LEAD_PLATING_SLAB.get())
+
+                // Jupiter
+                .add(ModBlocks.JUPITER_STONE_BRICK_SLAB.get());
+
+        this.tag(BlockTags.WALLS)
+                // For fixing the walls from Northstar
+                .add(NorthstarBlocks.MOON_STONE_BRICK_WALL.get())
+                .add(NorthstarBlocks.MARS_STONE_BRICK_WALL.get())
+                .add(NorthstarBlocks.MERCURY_STONE_BRICK_WALL.get())
+                .add(NorthstarBlocks.VENUS_STONE_BRICK_WALL.get())
+
+                // For the mod
+                .add(ModBlocks.JUPITER_STONE_BRICK_WALL.get());
 
         this.tag(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.COILER_FENCE.get())
@@ -186,6 +234,38 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.WILTER_WALL_HANGING_SIGN.get())
                 .add(ModBlocks.ARGYRE_WALL_HANGING_SIGN.get())
                 .add(ModBlocks.CALORIAN_WALL_HANGING_SIGN.get());
+
+        this.tag(Tags.Blocks.ORES_IRON)
+                .add(ModBlocks.JUPITER_IRON_ORE.get())
+                .add(ModBlocks.JUPITER_DEEP_IRON_ORE.get());
+
+        this.tag(Tags.Blocks.ORES_COPPER)
+                .add(ModBlocks.JUPITER_COPPER_ORE.get())
+                .add(ModBlocks.JUPITER_DEEP_COPPER_ORE.get());
+
+        this.tag(Tags.Blocks.ORES_GOLD)
+                .add(ModBlocks.JUPITER_GOLD_ORE.get())
+                .add(ModBlocks.JUPITER_DEEP_GOLD_ORE.get());
+
+        this.tag(Tags.Blocks.ORES_DIAMOND)
+                .add(ModBlocks.JUPITER_DIAMOND_ORE.get())
+                .add(ModBlocks.JUPITER_DEEP_DIAMOND_ORE.get());
+
+        this.tag(Tags.Blocks.ORES_REDSTONE)
+                .add(ModBlocks.JUPITER_REDSTONE_ORE.get())
+                .add(ModBlocks.JUPITER_DEEP_REDSTONE_ORE.get());
+
+        this.tag(Tags.Blocks.ORES_QUARTZ)
+                .add(ModBlocks.JUPITER_QUARTZ_ORE.get())
+                .add(ModBlocks.JUPITER_DEEP_QUARTZ_ORE.get());
+
+        this.tag(ModBlockTags.ZINC_ORES)
+                .add(ModBlocks.JUPITER_ZINC_ORE.get())
+                .add(ModBlocks.JUPITER_DEEP_ZINC_ORE.get());
+
+        this.tag(ModBlockTags.GLOWSTONE_ORES)
+                .add(ModBlocks.JUPITER_GLOWSTONE_ORE.get())
+                .add(ModBlocks.JUPITER_DEEP_GLOWSTONE_ORE.get());
 
         this.tag(ModBlockTags.TIER_4_HEAT_RESISTANCE)
                 .add(ModBlocks.LEAD_BLOCK.get())

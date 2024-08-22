@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "northstar_extras:block/jupiter_stone_bricks"
+  }
+}

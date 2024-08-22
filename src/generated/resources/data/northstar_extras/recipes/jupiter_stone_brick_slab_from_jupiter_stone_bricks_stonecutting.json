@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "northstar_extras:jupiter_stone_bricks"
+  },
+  "result": "northstar_extras:jupiter_stone_brick_slab"
+}

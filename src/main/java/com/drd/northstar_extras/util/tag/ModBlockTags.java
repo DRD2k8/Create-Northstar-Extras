@@ -7,6 +7,8 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 
 public class ModBlockTags {
+    public static final TagKey<Block> ZINC_ORES = tag("forge", "ores/zinc");
+    public static final TagKey<Block> GLOWSTONE_ORES = tag("forge", "ores/glowstone");
     public static final TagKey<Block> MARTIAN_STEEL_BLOCKS = tag("forge", "storage_blocks/martian_steel");
     public static final TagKey<Block> TUNGSTEN_BLOCKS = tag("forge", "storage_blocks/tungsten");
     public static final TagKey<Block> TUNGSTEN_ORES = tag("forge", "ores/tungsten");

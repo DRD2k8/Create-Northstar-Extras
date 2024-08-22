@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "northstar:mars_stone"
+  },
+  "result": "northstar:mars_stone_brick_slab_vertical"
+}

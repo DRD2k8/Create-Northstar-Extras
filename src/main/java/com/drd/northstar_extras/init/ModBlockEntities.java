@@ -1,7 +1,8 @@
-package com.drd.northstar_extras.block.entity;
+package com.drd.northstar_extras.init;
 
 import com.drd.northstar_extras.NorthstarExtras;
-import com.drd.northstar_extras.init.ModBlocks;
+import com.drd.northstar_extras.block.entity.CustomHangingSignBlockEntity;
+import com.drd.northstar_extras.block.entity.CustomSignBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

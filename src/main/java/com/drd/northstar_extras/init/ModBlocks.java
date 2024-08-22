@@ -12,7 +12,9 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,10 +22,17 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
+import java.util.function.ToIntFunction;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, NorthstarExtras.MOD_ID);
+
+    private static ToIntFunction<BlockState> litBlockEmission(int pLightValue) {
+        return (p_50763_) -> {
+            return (Boolean)p_50763_.getValue(BlockStateProperties.LIT) ? pLightValue : 0;
+        };
+    }
 
     public static final RegistryObject<Block> STRIPPED_COILER_WOOD = registerBlock("stripped_coiler_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(NorthstarBlocks.STRIPPED_COILER_LOG.get())));
@@ -131,10 +140,14 @@ public class ModBlocks {
             () -> new CustomCeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.CALORIAN));
     public static final RegistryObject<Block> CALORIAN_WALL_HANGING_SIGN = BLOCKS.register("calorian_wall_hanging_sign",
             () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.CALORIAN));
+
+    // Venus
     public static final RegistryObject<Block> VENUS_LEAD_ORE = registerBlock("venus_lead_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).mapColor(MapColor.TERRACOTTA_YELLOW).strength(6.0F, 20.0F).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).mapColor(MapColor.TERRACOTTA_YELLOW).strength(6.0F, 20.0F).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)));
     public static final RegistryObject<Block> VENUS_DEEP_LEAD_ORE = registerBlock("venus_deep_lead_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).mapColor(MapColor.TERRACOTTA_YELLOW).strength(7.0F, 20.0F).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().sound(SoundType.DEEPSLATE).mapColor(MapColor.TERRACOTTA_YELLOW).strength(7.0F, 20.0F).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)));
     public static final RegistryObject<Block> RAW_LEAD_BLOCK = registerBlock("raw_lead_block",
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.DEEPSLATE).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> LEAD_BLOCK = registerBlock("lead_block",
@@ -148,7 +161,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> LEAD_PLATING = registerBlock("lead_plating",
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.DEEPSLATE).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> LEAD_PLATING_STAIRS = registerBlock("lead_plating_stairs",
-            () -> new StairBlock(((Block) LEAD_PLATING.get()).defaultBlockState(), BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.DEEPSLATE).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
+            () -> new StairBlock(((Block) LEAD_PLATING.get()).defaultBlockState(), BlockBehaviour.Properties.copy(LEAD_PLATING.get())));
     public static final RegistryObject<Block> LEAD_PLATING_SLAB = registerBlock("lead_plating_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.DEEPSLATE).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> LEAD_PLATING_VERTICAL_SLAB = registerBlock("lead_plating_vertical_slab",
@@ -157,6 +170,76 @@ public class ModBlocks {
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.DEEPSLATE).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> LEAD_GRATE = registerBlock("lead_grate",
             () -> new GrateBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.DEEPSLATE).strength(5.0F, 16.0F).requiresCorrectToolForDrops()));
+
+    // Jupiter
+    public static final RegistryObject<Block> JUPITER_STONE = registerBlock("jupiter_stone",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(3.5F, 8.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> JUPITER_DEEP_STONE = registerBlock("jupiter_deep_stone",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.BASALT).mapColor(MapColor.TERRACOTTA_RED).strength(4.5F, 8.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> JUPITER_STONE_BRICKS = registerBlock("jupiter_stone_bricks",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(3.5F, 12.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> JUPITER_STONE_BRICK_STAIRS = registerBlock("jupiter_stone_brick_stairs",
+            () -> new StairBlock(((Block) JUPITER_STONE_BRICKS.get()).defaultBlockState(), BlockBehaviour.Properties.copy(JUPITER_STONE_BRICKS.get())));
+    public static final RegistryObject<Block> JUPITER_STONE_BRICK_SLAB = registerBlock("jupiter_stone_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(3.5F, 12.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> JUPITER_STONE_BRICK_VERTICAL_SLAB = registerBlock("jupiter_stone_brick_vertical_slab",
+            () -> new VerticalSlabBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(3.5F, 12.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> JUPITER_STONE_BRICK_WALL = registerBlock("jupiter_stone_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(3.5F, 12.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> JUPITER_STONE_PILLAR = registerBlock("jupiter_stone_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(3.5F, 12.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CHISELED_JUPITER_STONE = registerBlock("chiseled_jupiter_stone",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(3.5F, 12.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> POLISHED_JUPITER_STONE = registerBlock("polished_jupiter_stone",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(3.5F, 12.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> JUPITER_STONE_LAMP = registerBlock("jupiter_stone_lamp",
+            () -> new Block(BlockBehaviour.Properties.of().lightLevel((p_50872_) -> {
+                return 15;
+            }).sound(SoundType.GLASS).mapColor(MapColor.COLOR_YELLOW).strength(3.0F, 6.5F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> JUPITER_IRON_ORE = registerBlock("jupiter_iron_ore",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(5.0F, 12.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> JUPITER_COPPER_ORE = registerBlock("jupiter_copper_ore",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(5.0F, 12.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> JUPITER_GOLD_ORE = registerBlock("jupiter_gold_ore",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(5.0F, 12.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> JUPITER_DIAMOND_ORE = registerBlock("jupiter_diamond_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(6.0F, 12.0F).requiresCorrectToolForDrops(),
+                    UniformInt.of(3, 7)));
+    public static final RegistryObject<Block> JUPITER_REDSTONE_ORE = registerBlock("jupiter_redstone_ore",
+            () -> new RedStoneOreBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(5.0F, 12.0F).requiresCorrectToolForDrops()
+                    .randomTicks().lightLevel(litBlockEmission(9))));
+    public static final RegistryObject<Block> JUPITER_QUARTZ_ORE = registerBlock("jupiter_quartz_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(5.0F, 12.0F).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)));
+    public static final RegistryObject<Block> JUPITER_ZINC_ORE = registerBlock("jupiter_zinc_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(5.0F, 12.0F).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)));
+    public static final RegistryObject<Block> JUPITER_GLOWSTONE_ORE = registerBlock("jupiter_glowstone_ore",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(5.0F, 12.0F).requiresCorrectToolForDrops().lightLevel((p_50872_) -> {
+                return 6;
+            })));
+    public static final RegistryObject<Block> JUPITER_DEEP_IRON_ORE = registerBlock("jupiter_deep_iron_ore",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.BASALT).mapColor(MapColor.TERRACOTTA_RED).strength(6.0F, 12.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> JUPITER_DEEP_COPPER_ORE = registerBlock("jupiter_deep_copper_ore",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.BASALT).mapColor(MapColor.TERRACOTTA_RED).strength(6.0F, 12.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> JUPITER_DEEP_GOLD_ORE = registerBlock("jupiter_deep_gold_ore",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.BASALT).mapColor(MapColor.TERRACOTTA_RED).strength(6.0F, 12.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> JUPITER_DEEP_DIAMOND_ORE = registerBlock("jupiter_deep_diamond_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().sound(SoundType.BASALT).mapColor(MapColor.TERRACOTTA_RED).strength(7.0F, 12.0F).requiresCorrectToolForDrops(),
+                    UniformInt.of(3, 7)));
+    public static final RegistryObject<Block> JUPITER_DEEP_REDSTONE_ORE = registerBlock("jupiter_deep_redstone_ore",
+            () -> new RedStoneOreBlock(BlockBehaviour.Properties.of().sound(SoundType.BASALT).mapColor(MapColor.TERRACOTTA_RED).strength(6.0F, 12.0F).requiresCorrectToolForDrops()
+                    .randomTicks().lightLevel(litBlockEmission(9))));
+    public static final RegistryObject<Block> JUPITER_DEEP_QUARTZ_ORE = registerBlock("jupiter_deep_quartz_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().sound(SoundType.BASALT).mapColor(MapColor.TERRACOTTA_RED).strength(6.0F, 12.0F).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)));
+    public static final RegistryObject<Block> JUPITER_DEEP_ZINC_ORE = registerBlock("jupiter_deep_zinc_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().sound(SoundType.BASALT).mapColor(MapColor.TERRACOTTA_RED).strength(6.0F, 12.0F).requiresCorrectToolForDrops(),
+                    UniformInt.of(2, 5)));
+    public static final RegistryObject<Block> JUPITER_DEEP_GLOWSTONE_ORE = registerBlock("jupiter_deep_glowstone_ore",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.BASALT).mapColor(MapColor.TERRACOTTA_RED).strength(6.0F, 12.0F).requiresCorrectToolForDrops().lightLevel((p_50872_) -> {
+                return 6;
+            })));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "northstar:moon_stone"
+  },
+  "result": "northstar:polished_moon_stone"
+}
