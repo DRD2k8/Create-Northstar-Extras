@@ -117,6 +117,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.JUPITER_DEEP_ZINC_ORE.get())
                 .add(ModBlocks.JUPITER_DEEP_GLOWSTONE_ORE.get());
 
+        this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(ModBlocks.JUPITER_ASH.get());
+
         this.tag(ModBlockTags.MARTIAN_STEEL_BLOCKS)
                 .add(NorthstarBlocks.MARTIAN_STEEL_BLOCK.get());
 

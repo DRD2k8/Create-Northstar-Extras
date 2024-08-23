@@ -1,0 +1,30 @@
+{
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 13938836,
+    "fog_color": 14992291,
+    "water_color": 12221272,
+    "water_fog_color": 7423276
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:nether_cave"
+    ]
+  },
+  "features": [
+    "northstar_extras:jupiter/iron_ore",
+    "northstar_extras:jupiter/copper_ore",
+    "northstar_extras:jupiter/gold_ore",
+    "northstar_extras:jupiter/diamond_ore",
+    "northstar_extras:jupiter/redstone_ore",
+    "northstar_extras:jupiter/quartz_ore",
+    "northstar_extras:jupiter/zinc_ore",
+    "northstar_extras:jupiter/glowstone_ore"
+  ]
+}

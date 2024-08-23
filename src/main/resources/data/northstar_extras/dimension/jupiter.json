@@ -1,0 +1,24 @@
+{
+  "type": "northstar_extras:jupiter",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "northstar_extras:jupiter",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "northstar_extras:jovian_ash_wastes",
+          "parameters": {
+            "temperature": 0,
+            "humidity": 0,
+            "continentalness": 0,
+            "erosion": 0,
+            "weirdness": 0,
+            "depth": 0,
+            "offset": 0
+          }
+        }
+      ]
+    }
+  }
+}

@@ -42,6 +42,7 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         blockWithItem(ModBlocks.LEAD_GRATE);
 
         // Jupiter
+        blockWithItem(ModBlocks.JUPITER_ASH);
         blockWithItem(ModBlocks.JUPITER_STONE);
         blockWithItem(ModBlocks.JUPITER_DEEP_STONE);
         blockWithItem(ModBlocks.JUPITER_STONE_BRICKS);

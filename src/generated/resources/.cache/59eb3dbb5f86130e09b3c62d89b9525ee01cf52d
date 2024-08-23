@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-22T13:02:55.2830151	Loot Tables
+// 1.20.1	2024-08-22T15:28:15.0758019	Loot Tables
 15359371cb87f8bab77267f89312ca1e9dadbf26 data/northstar_extras/loot_tables/blocks/argyre_button.json
 a81a46ac2c989288e2714df870f11a4a3b870fa1 data/northstar_extras/loot_tables/blocks/argyre_door.json
 2361c0c7621e8094c9daa52c056dbc96a96b10f7 data/northstar_extras/loot_tables/blocks/argyre_fence.json
@@ -33,6 +33,7 @@ d3d459abb22153cc42e282b31b371aa55ea2c592 data/northstar_extras/loot_tables/block
 de934e09b3d10fbc022476649cf6cd5f201fc71a data/northstar_extras/loot_tables/blocks/coiler_wall_hanging_sign.json
 6cc31c11ded4f9c1867686f4cc73622f59593371 data/northstar_extras/loot_tables/blocks/coiler_wall_sign.json
 f94dfe000812629f76d1c2d8e8c4cd412e981c80 data/northstar_extras/loot_tables/blocks/coiler_wood.json
+05d5bdeb92426535451dda8390c72b8036a8d096 data/northstar_extras/loot_tables/blocks/jupiter_ash.json
 0540ef9af55afc2e095f87348ac99fa6a9f346e6 data/northstar_extras/loot_tables/blocks/jupiter_copper_ore.json
 216e6698caa3c126be2d638b9ec3efed126d937b data/northstar_extras/loot_tables/blocks/jupiter_deep_copper_ore.json
 c19544673291d7aad95116abd30f79d77e1561b7 data/northstar_extras/loot_tables/blocks/jupiter_deep_diamond_ore.json

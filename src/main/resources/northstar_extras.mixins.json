@@ -9,6 +9,7 @@
     "ModRocketTierStuff"
   ],
   "client": [
+    "ModLevelRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

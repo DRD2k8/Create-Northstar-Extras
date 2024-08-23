@@ -116,6 +116,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.LEAD_GRATE.get());
 
         // Jupiter
+        this.dropSelf(ModBlocks.JUPITER_ASH.get());
         this.dropSelf(ModBlocks.JUPITER_STONE.get());
         this.dropSelf(ModBlocks.JUPITER_DEEP_STONE.get());
         this.dropSelf(ModBlocks.JUPITER_STONE_BRICKS.get());

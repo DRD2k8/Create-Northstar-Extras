@@ -3,6 +3,7 @@ package com.drd.northstar_extras;
 import com.drd.northstar_extras.init.ModBlockEntities;
 import com.drd.northstar_extras.datagen.*;
 import com.drd.northstar_extras.init.*;
+import com.drd.northstar_extras.planet.ModDimensionKeys;
 import com.drd.northstar_extras.util.ModUtils;
 import com.drd.northstar_extras.util.ModWoodTypes;
 import com.lightning.northstar.block.NorthstarBlocks;
@@ -45,6 +46,8 @@ public class NorthstarExtras {
         ModBlockEntities.register(modEventBus);
         ModItems.register(modEventBus);
         ModTabs.register(modEventBus);
+
+        ModDimensionKeys.register();
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);

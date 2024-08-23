@@ -172,6 +172,8 @@ public class ModBlocks {
             () -> new GrateBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.DEEPSLATE).strength(5.0F, 16.0F).requiresCorrectToolForDrops()));
 
     // Jupiter
+    public static final RegistryObject<Block> JUPITER_ASH = registerBlock("jupiter_ash",
+            () -> new SandBlock(16565900, BlockBehaviour.Properties.copy(Blocks.SAND).sound(SoundType.SOUL_SAND).mapColor(MapColor.COLOR_ORANGE)));
     public static final RegistryObject<Block> JUPITER_STONE = registerBlock("jupiter_stone",
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(3.5F, 8.0F).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> JUPITER_DEEP_STONE = registerBlock("jupiter_deep_stone",

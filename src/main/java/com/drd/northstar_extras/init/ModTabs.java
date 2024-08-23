@@ -80,6 +80,7 @@ public class ModTabs {
                         pOutput.accept(ModBlocks.LEAD_GRATE.get());
 
                         // Jupiter
+                        pOutput.accept(ModBlocks.JUPITER_ASH.get());
                         pOutput.accept(ModBlocks.JUPITER_STONE.get());
                         pOutput.accept(ModBlocks.JUPITER_DEEP_STONE.get());
                         pOutput.accept(ModBlocks.JUPITER_STONE_BRICKS.get());
