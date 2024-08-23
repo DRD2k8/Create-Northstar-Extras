@@ -6,6 +6,7 @@
   "refmap": "northstar_extras.refmap.json",
   "mixins": [
     "LogStripping",
+    "ModPlanets",
     "ModRocketTierStuff"
   ],
   "client": [
