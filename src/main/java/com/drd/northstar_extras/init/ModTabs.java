@@ -1,10 +1,15 @@
 package com.drd.northstar_extras.init;
 
 import com.drd.northstar_extras.NorthstarExtras;
+import com.lightning.northstar.item.NorthstarItems;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.Style;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -17,6 +22,8 @@ public class ModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.LEAD_INGOT.get()))
                     .title(Component.translatable("itemGroup.northstar_extras"))
                     .displayItems((pParameters, pOutput) -> {
+                        addStarMaps(pOutput);
+
                         pOutput.accept(ModBlocks.ARGYRE_WOOD.get());
                         pOutput.accept(ModBlocks.STRIPPED_ARGYRE_WOOD.get());
                         pOutput.accept(ModBlocks.ARGYRE_FENCE.get());
@@ -110,6 +117,44 @@ public class ModTabs {
                         pOutput.accept(ModBlocks.JUPITER_DEEP_GLOWSTONE_ORE.get());
                     })
                     .build());
+
+    public static void addStarMaps(CreativeModeTab.Output pGroup) {
+        ItemStack ceres = new ItemStack((ItemLike) NorthstarItems.STAR_MAP.get());
+        ceres.setHoverName(Component.translatable("item.northstar.star_map_ceres").setStyle(Style.EMPTY.withColor(ChatFormatting.AQUA).withItalic(false)));
+        CompoundTag ceresTag = ceres.getOrCreateTagElement("Planet");
+        ceresTag.putString("name", "ceres");
+        pGroup.accept(ceres);
+        ItemStack jupiter = new ItemStack((ItemLike) NorthstarItems.STAR_MAP.get());
+        jupiter.setHoverName(Component.translatable("item.northstar.star_map_jupiter").setStyle(Style.EMPTY.withColor(ChatFormatting.AQUA).withItalic(false)));
+        CompoundTag jupiterTag = jupiter.getOrCreateTagElement("Planet");
+        jupiterTag.putString("name", "jupiter");
+        pGroup.accept(jupiter);
+        ItemStack saturn = new ItemStack((ItemLike) NorthstarItems.STAR_MAP.get());
+        saturn.setHoverName(Component.translatable("item.northstar.star_map_saturn").setStyle(Style.EMPTY.withColor(ChatFormatting.AQUA).withItalic(false)));
+        CompoundTag saturnTag = saturn.getOrCreateTagElement("Planet");
+        saturnTag.putString("name", "saturn");
+        pGroup.accept(saturn);
+        ItemStack uranus = new ItemStack((ItemLike) NorthstarItems.STAR_MAP.get());
+        uranus.setHoverName(Component.translatable("item.northstar.star_map_uranus").setStyle(Style.EMPTY.withColor(ChatFormatting.AQUA).withItalic(false)));
+        CompoundTag uranusTag = uranus.getOrCreateTagElement("Planet");
+        uranusTag.putString("name", "uranus");
+        pGroup.accept(uranus);
+        ItemStack neptune = new ItemStack((ItemLike) NorthstarItems.STAR_MAP.get());
+        neptune.setHoverName(Component.translatable("item.northstar.star_map_neptune").setStyle(Style.EMPTY.withColor(ChatFormatting.AQUA).withItalic(false)));
+        CompoundTag neptuneTag = neptune.getOrCreateTagElement("Planet");
+        neptuneTag.putString("name", "neptune");
+        pGroup.accept(neptune);
+        ItemStack pluto = new ItemStack((ItemLike) NorthstarItems.STAR_MAP.get());
+        pluto.setHoverName(Component.translatable("item.northstar.star_map_pluto").setStyle(Style.EMPTY.withColor(ChatFormatting.AQUA).withItalic(false)));
+        CompoundTag plutoTag = pluto.getOrCreateTagElement("Planet");
+        plutoTag.putString("name", "pluto");
+        pGroup.accept(pluto);
+        ItemStack eris = new ItemStack((ItemLike) NorthstarItems.STAR_MAP.get());
+        eris.setHoverName(Component.translatable("item.northstar.star_map_eris").setStyle(Style.EMPTY.withColor(ChatFormatting.AQUA).withItalic(false)));
+        CompoundTag erisTag = eris.getOrCreateTagElement("Planet");
+        erisTag.putString("name", "eris");
+        pGroup.accept(eris);
+    }
 
     public static void register(IEventBus eventBus) {
         TABS.register(eventBus);
