@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "northstar_extras:palladium_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "northstar_extras:palladium_sheet"
+    }
+  ]
+}
