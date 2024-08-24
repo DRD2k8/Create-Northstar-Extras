@@ -81,6 +81,17 @@ public class ModItemModelGenerator extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.JUPITER_STONE_BRICK_VERTICAL_SLAB);
         blockInventoryItem(ModBlocks.JUPITER_STONE_BRICK_WALL);
         evenSimplerBlockItem(ModBlocks.JUPITER_STONE_PILLAR);
+        simpleItem(ModItems.RAW_PALLADIUM);
+        simpleItem(ModItems.CRUSHED_RAW_PALLADIUM);
+        simpleItem(ModItems.PALLADIUM_INGOT);
+        simpleItem(ModItems.PALLADIUM_NUGGET);
+        simpleItem(ModItems.PALLADIUM_SHEET);
+        evenSimplerBlockItem(ModBlocks.PALLADIUM_SHEETMETAL_SLAB);
+        evenSimplerBlockItem(ModBlocks.PALLADIUM_SHEETMETAL_VERTICAL_SLAB);
+        evenSimplerBlockItem(ModBlocks.PALLADIUM_PLATING_STAIRS);
+        evenSimplerBlockItem(ModBlocks.PALLADIUM_PLATING_SLAB);
+        evenSimplerBlockItem(ModBlocks.PALLADIUM_PLATING_VERTICAL_SLAB);
+        evenSimplerBlockItem(ModBlocks.PALLADIUM_PILLAR);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

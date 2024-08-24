@@ -40,6 +40,16 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> LEAD_SHEET = ITEMS.register("lead_sheet",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_PALLADIUM = ITEMS.register("raw_palladium",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CRUSHED_RAW_PALLADIUM = ITEMS.register("crushed_raw_palladium",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PALLADIUM_INGOT = ITEMS.register("palladium_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PALLADIUM_NUGGET = ITEMS.register("palladium_nugget",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PALLADIUM_SHEET = ITEMS.register("palladium_sheet",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -1,26 +1,28 @@
-// 1.20.1	2024-08-22T15:28:15.0758019	Tags for minecraft:block mod id northstar_extras
-e668c1407bc6ce406f5655141bac5b3c0ac0bcea data/forge/tags/blocks/ores.json
+// 1.20.1	2024-08-23T16:48:59.8376424	Tags for minecraft:block mod id northstar_extras
+def0e2263b61d5e5588a5b2d1b7d01482e5bb83b data/forge/tags/blocks/ores.json
 6c8e17c024655f518c33a5439e94a74398b738cf data/forge/tags/blocks/ores/copper.json
 85b42cc4e5922ad9374c1416128b74fa496a2480 data/forge/tags/blocks/ores/diamond.json
 0a9b06f89cb4330a9452ee105a7d2c771db0856b data/forge/tags/blocks/ores/glowstone.json
 e2c146dd3c8dcae12cd1d7838eb6bfe471f91bae data/forge/tags/blocks/ores/gold.json
 f52f8d7646e0d1df1e37f518adcb796bb4822445 data/forge/tags/blocks/ores/iron.json
 ab0d9910f4ad98c33945fb48600553e94677685e data/forge/tags/blocks/ores/lead.json
+63605e72e2dfa892c890c6b0e13cc88b81e98fe2 data/forge/tags/blocks/ores/palladium.json
 cabf4e3007c4b4c90750301f832fb1358549c736 data/forge/tags/blocks/ores/quartz.json
 7de9d4103b2fe1d65fc5e6cf5f709af47da2fa75 data/forge/tags/blocks/ores/redstone.json
 15dedfe5941a349c2672fa7e86f1daacc92e31c1 data/forge/tags/blocks/ores/tungsten.json
 a78b2dc3e7ed3dd9fe610affb793e730c4265304 data/forge/tags/blocks/ores/zinc.json
 ac5c0f2643742e2def1d17ba90ff5c21360b2c7a data/forge/tags/blocks/storage_blocks/lead.json
 e660d582836a3c0a3f28234c06ffba89e9103299 data/forge/tags/blocks/storage_blocks/martian_steel.json
+b53cbccb3f9e19081fdf81bfe32d83d8f124507a data/forge/tags/blocks/storage_blocks/palladium.json
 3bd729b5105b86c181d29139d67039bfe8b6f8d1 data/forge/tags/blocks/storage_blocks/tungsten.json
 51bc982c094d7cd9328839cbfebbfdbfb078d7be data/minecraft/tags/blocks/ceiling_hanging_signs.json
 497494e60a9010aeda67d9fbf60c8fbfbb6717f4 data/minecraft/tags/blocks/fence_gates.json
 6e77499de7beb910c8cc4c44a52e4e46f6b6aff4 data/minecraft/tags/blocks/logs.json
 6bdc4c0f60c04def4fc443c37f755ca776efd45e data/minecraft/tags/blocks/mineable/axe.json
-2e7ba14fa501d0c6dc511aae97478715ebc628f2 data/minecraft/tags/blocks/mineable/pickaxe.json
+e51b2a39c5c076c773bc5d30ae03a1024076af21 data/minecraft/tags/blocks/mineable/pickaxe.json
 1720cd7f33a7e73f7a9c6a47700c73f5c783b1fe data/minecraft/tags/blocks/mineable/shovel.json
-f238cbd43883ebb95a09dc6eb6d98c7d368b6a19 data/minecraft/tags/blocks/slabs.json
-760262314b5f7b906150de9cd1832200e86acd49 data/minecraft/tags/blocks/stairs.json
+4915b39a4da0973af2a1ccf30ad8341e66619e75 data/minecraft/tags/blocks/slabs.json
+9bdce11b5afbd843dacfb582cc21c94c85e91eef data/minecraft/tags/blocks/stairs.json
 60dce65761fc73a2c08946ca92503d28010adb87 data/minecraft/tags/blocks/standing_signs.json
 58f9032f82a899aa6a101720ab1c186d180e2db4 data/minecraft/tags/blocks/walls.json
 ad349fecd02cb608b95e6b8863ab589203b6938f data/minecraft/tags/blocks/wall_hanging_signs.json
@@ -30,4 +32,5 @@ e05fbc09232ab6705229b85d9968424bdea070d1 data/minecraft/tags/blocks/wooden_doors
 846a1bd13780bdc094e520c387921eac30af3186 data/minecraft/tags/blocks/wooden_fences.json
 9044c50a2163246a01cda3ae7450ccd3aebcfab1 data/minecraft/tags/blocks/wooden_pressure_plates.json
 d22ecfe5983a813d06e75ee85c68b7b0222015aa data/minecraft/tags/blocks/wooden_trapdoors.json
-62fdd2f48ba0e8f41df0c1f21b82030f3cc88245 data/northstar_extras/tags/blocks/tier_4_heat_resistance.json
+688b1686e9a7fcaa8c7f617787eeb0357f967103 data/northstar_extras/tags/blocks/tier_4_heat_resistance.json
+6564256da225e19a92672b34366aadf9d88d45b3 data/northstar_extras/tags/blocks/tier_5_heat_resistance.json

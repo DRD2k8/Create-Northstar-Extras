@@ -83,6 +83,7 @@
   "block.northstar_extras.jupiter_quartz_ore": "Jupiter Quartz Ore",
   "block.northstar_extras.jupiter_zinc_ore": "Jupiter Zinc Ore",
   "block.northstar_extras.jupiter_glowstone_ore": "Jupiter Glowstone Ore",
+  "block.northstar_extras.jupiter_palladium_ore": "Jupiter Palladium Ore",
   "block.northstar_extras.jupiter_deep_iron_ore": "Jupiter Deep Iron Ore",
   "block.northstar_extras.jupiter_deep_copper_ore": "Jupiter Deep Copper Ore",
   "block.northstar_extras.jupiter_deep_gold_ore": "Jupiter Deep Gold Ore",
@@ -91,12 +92,30 @@
   "block.northstar_extras.jupiter_deep_quartz_ore": "Jupiter Deep Quartz Ore",
   "block.northstar_extras.jupiter_deep_zinc_ore": "Jupiter Deep Zinc Ore",
   "block.northstar_extras.jupiter_deep_glowstone_ore": "Jupiter Deep Glowstone Ore",
+  "block.northstar_extras.jupiter_deep_palladium_ore": "Jupiter Deep Palladium Ore",
+  "block.northstar_extras.raw_palladium_block": "Block of Raw Palladium",
+  "block.northstar_extras.palladium_block": "Block of Palladium",
+  "block.northstar_extras.palladium_sheetmetal": "Palladium Sheetmetal",
+  "block.northstar_extras.palladium_sheetmetal_slab": "Palladium Sheetmetal Slab",
+  "block.northstar_extras.palladium_sheetmetal_vertical_slab": "Palladium Sheetmetal Vertical Slab",
+  "block.northstar_extras.palladium_plating": "Palladium Plating",
+  "block.northstar_extras.palladium_plating_stairs": "Palladium Plating Stairs",
+  "block.northstar_extras.palladium_plating_slab": "Palladium Plating Slab",
+  "block.northstar_extras.palladium_plating_vertical_slab": "Palladium Plating Vertical Slab",
+  "block.northstar_extras.palladium_pillar": "Palladium Pillar",
+  "block.northstar_extras.palladium_grate": "Palladium Grate",
 
   "item.northstar_extras.mars_sand_paper": "Mars Sand Paper",
   "item.northstar_extras.raw_lead": "Raw Lead",
   "item.northstar_extras.lead_ingot": "Lead Ingot",
   "item.northstar_extras.lead_nugget": "Lead Nugget",
   "item.northstar_extras.lead_sheet": "Lead Sheet",
+
+  "item.northstar_extras.raw_palladium": "Raw Palladium",
+  "item.northstar_extras.crushed_raw_palladium": "Crushed Raw Palladium",
+  "item.northstar_extras.palladium_ingot": "Palladium Ingot",
+  "item.northstar_extras.palladium_nugget": "Palladium Nugget",
+  "item.northstar_extras.palladium_sheet": "Palladium Sheet",
 
   "itemGroup.northstar_extras": "Northstar Extras"
 }

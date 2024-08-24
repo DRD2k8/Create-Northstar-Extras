@@ -29,6 +29,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> JUPITER_QUARTZ_ORE_KEY = registerKey("jupiter/quartz_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> JUPITER_ZINC_ORE_KEY = registerKey("jupiter/zinc_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> JUPITER_GLOWSTONE_ORE_KEY = registerKey("jupiter/glowstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> JUPITER_PALLADIUM_ORE_KEY = registerKey("jupiter/palladium_ore");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest venusStoneReplaceable = new BlockMatchTest(NorthstarBlocks.VENUS_STONE.get());
@@ -66,6 +67,9 @@ public class ModConfiguredFeatures {
         List<OreConfiguration.TargetBlockState> jupiterGlowstoneOres = List.of(OreConfiguration.target(jupiterStoneReplaceable,
                         ModBlocks.JUPITER_GLOWSTONE_ORE.get().defaultBlockState()),
                 OreConfiguration.target(jupiterDeepStoneReplaceable, ModBlocks.JUPITER_DEEP_GLOWSTONE_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> jupiterPalladiumOres = List.of(OreConfiguration.target(jupiterStoneReplaceable,
+                        ModBlocks.JUPITER_PALLADIUM_ORE.get().defaultBlockState()),
+                OreConfiguration.target(jupiterDeepStoneReplaceable, ModBlocks.JUPITER_DEEP_PALLADIUM_ORE.get().defaultBlockState()));
 
         // Venus Registries
         register(context, VENUS_LEAD_ORE_KEY, Feature.ORE, new OreConfiguration(venusLeadOres, 9));
@@ -79,6 +83,7 @@ public class ModConfiguredFeatures {
         register(context, JUPITER_QUARTZ_ORE_KEY, Feature.ORE, new OreConfiguration(jupiterQuartzOres, 12));
         register(context, JUPITER_ZINC_ORE_KEY, Feature.ORE, new OreConfiguration(jupiterZincOres, 9));
         register(context, JUPITER_GLOWSTONE_ORE_KEY, Feature.ORE, new OreConfiguration(jupiterGlowstoneOres, 3));
+        register(context, JUPITER_PALLADIUM_ORE_KEY, Feature.ORE, new OreConfiguration(jupiterPalladiumOres, 5));
     }
 
 

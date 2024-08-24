@@ -2,6 +2,8 @@
   "values": [
     "northstar_extras:lead_sheetmetal_slab",
     "northstar_extras:lead_plating_slab",
-    "northstar_extras:jupiter_stone_brick_slab"
+    "northstar_extras:jupiter_stone_brick_slab",
+    "northstar_extras:palladium_sheetmetal_slab",
+    "northstar_extras:palladium_plating_slab"
   ]
 }

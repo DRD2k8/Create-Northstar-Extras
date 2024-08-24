@@ -8,6 +8,7 @@ import net.minecraft.world.level.biome.Biome;
 
 public class ModBiomeTags {
     public static final TagKey<Biome> VENUS_BIOMES = tag(NorthstarExtras.MOD_ID, "venus_biomes");
+    public static final TagKey<Biome> JUPITER_BIOMES = tag(NorthstarExtras.MOD_ID, "jupiter_biomes");
 
     private static TagKey<Biome> tag(String modid, String name) {
         return TagKey.create(Registries.BIOME, new ResourceLocation(modid, name));

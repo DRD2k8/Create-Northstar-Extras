@@ -1,0 +1,18 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "northstar_extras:raw_palladium"
+    }
+  ],
+  "processingTime": 500,
+  "results": [
+    {
+      "item": "northstar_extras:crushed_raw_palladium"
+    },
+    {
+      "chance": 0.75,
+      "item": "create:experience_nugget"
+    }
+  ]
+}

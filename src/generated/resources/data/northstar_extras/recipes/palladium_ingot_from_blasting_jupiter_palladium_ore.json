@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "item",
+  "ingredient": {
+    "item": "northstar_extras:jupiter_palladium_ore"
+  },
+  "result": "northstar_extras:palladium_ingot"
+}

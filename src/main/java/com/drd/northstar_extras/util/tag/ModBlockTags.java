@@ -15,6 +15,9 @@ public class ModBlockTags {
     public static final TagKey<Block> LEAD_BLOCKS = tag("forge", "storage_blocks/lead");
     public static final TagKey<Block> LEAD_ORES = tag("forge", "ores/lead");
     public static final TagKey<Block> TIER_4_HEAT_RESISTANCE = tag(NorthstarExtras.MOD_ID, "tier_4_heat_resistance");
+    public static final TagKey<Block> PALLADIUM_BLOCKS = tag("forge", "storage_blocks/palladium");
+    public static final TagKey<Block> PALLADIUM_ORES = tag("forge", "ores/palladium");
+    public static final TagKey<Block> TIER_5_HEAT_RESISTANCE = tag(NorthstarExtras.MOD_ID, "tier_5_heat_resistance");
 
     private static TagKey<Block> tag(String modid, String name) {
         return BlockTags.create(new ResourceLocation(modid, name));

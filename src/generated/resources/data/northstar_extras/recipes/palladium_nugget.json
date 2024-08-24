@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "northstar_extras:palladium_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "northstar_extras:palladium_nugget"
+  }
+}

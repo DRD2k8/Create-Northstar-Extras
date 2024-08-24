@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "northstar_extras:block/palladium_plating_slab"
+    },
+    "type=double": {
+      "model": "northstar_extras:block/palladium_plating"
+    },
+    "type=top": {
+      "model": "northstar_extras:block/palladium_plating_slab_top"
+    }
+  }
+}

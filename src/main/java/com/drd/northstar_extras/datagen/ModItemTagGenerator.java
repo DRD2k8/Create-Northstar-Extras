@@ -28,12 +28,22 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(Tags.Items.RAW_MATERIALS)
                 .addTag(ModItemTags.RAW_TUNGSTEN)
-                .addTag(ModItemTags.RAW_LEAD);
+                .addTag(ModItemTags.RAW_LEAD)
+                .addTag(ModItemTags.RAW_PALLADIUM);
+
+        this.tag(AllTags.AllItemTags.CRUSHED_RAW_MATERIALS.tag)
+                .addTag(ModItemTags.CRUSHED_RAW_PALLADIUM);
 
         this.tag(Tags.Items.INGOTS)
                 .addTag(ModItemTags.MARTIAN_STEEL_INGOTS)
                 .addTag(ModItemTags.TUNGSTEN_INGOTS)
-                .addTag(ModItemTags.LEAD_INGOTS);
+                .addTag(ModItemTags.LEAD_INGOTS)
+                .addTag(ModItemTags.PALLADIUM_INGOTS);
+
+        this.tag(Tags.Items.NUGGETS)
+                .addTag(ModItemTags.TUNGSTEN_NUGGETS)
+                .addTag(ModItemTags.LEAD_NUGGETS)
+                .addTag(ModItemTags.PALLADIUM_NUGGETS);
 
         this.tag(ModItemTags.MARTIAN_STEEL_INGOTS)
                 .add(NorthstarItems.MARTIAN_STEEL.get());
@@ -62,21 +72,40 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModItemTags.RAW_LEAD)
                 .add(ModItems.RAW_LEAD.get());
 
+        this.tag(ModItemTags.RAW_PALLADIUM)
+                .add(ModItems.RAW_PALLADIUM.get());
+
+        this.tag(ModItemTags.CRUSHED_RAW_PALLADIUM)
+                .add(ModItems.CRUSHED_RAW_PALLADIUM.get());
+
         this.tag(ModItemTags.LEAD_INGOTS)
                 .add(ModItems.LEAD_INGOT.get());
+
+        this.tag(ModItemTags.PALLADIUM_INGOTS)
+                .add(ModItems.PALLADIUM_INGOT.get());
 
         this.tag(ModItemTags.LEAD_NUGGETS)
                 .add(ModItems.LEAD_NUGGET.get());
 
+        this.tag(ModItemTags.PALLADIUM_NUGGETS)
+                .add(ModItems.PALLADIUM_NUGGET.get());
+
         this.tag(ModItemTags.LEAD_PLATES)
                 .add(ModItems.LEAD_SHEET.get());
+
+        this.tag(ModItemTags.PALLADIUM_PLATES)
+                .add(ModItems.PALLADIUM_SHEET.get());
 
         this.tag(ModItemTags.LEAD_BLOCKS)
                 .add(ModBlocks.LEAD_BLOCK.get().asItem());
 
+        this.tag(ModItemTags.PALLADIUM_BLOCKS)
+                .add(ModBlocks.PALLADIUM_BLOCK.get().asItem());
+
         this.tag(Tags.Items.ORES)
                 .addTag(ModItemTags.TUNGSTEN_ORES)
-                .addTag(ModItemTags.LEAD_ORES);
+                .addTag(ModItemTags.LEAD_ORES)
+                .addTag(ModItemTags.PALLADIUM_ORES);
 
         this.tag(ModItemTags.TUNGSTEN_ORES)
                 .add(NorthstarBlocks.MERCURY_TUNGSTEN_ORE.get().asItem())
@@ -86,12 +115,17 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.VENUS_LEAD_ORE.get().asItem())
                 .add(ModBlocks.VENUS_DEEP_LEAD_ORE.get().asItem());
 
+        this.tag(ModItemTags.PALLADIUM_ORES)
+                .add(ModBlocks.JUPITER_PALLADIUM_ORE.get().asItem())
+                .add(ModBlocks.JUPITER_DEEP_PALLADIUM_ORE.get().asItem());
+
         this.tag(ItemTags.STAIRS)
                 // Venus
                 .add(ModBlocks.LEAD_PLATING_STAIRS.get().asItem())
 
                 // Jupiter
-                .add(ModBlocks.JUPITER_STONE_BRICK_STAIRS.get().asItem());
+                .add(ModBlocks.JUPITER_STONE_BRICK_STAIRS.get().asItem())
+                .add(ModBlocks.PALLADIUM_PLATING_STAIRS.get().asItem());
 
         this.tag(ItemTags.SLABS)
                 // Venus
@@ -99,7 +133,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.LEAD_PLATING_SLAB.get().asItem())
 
                 // Jupiter
-                .add(ModBlocks.JUPITER_STONE_BRICK_SLAB.get().asItem());
+                .add(ModBlocks.JUPITER_STONE_BRICK_SLAB.get().asItem())
+                .add(ModBlocks.PALLADIUM_SHEETMETAL_SLAB.get().asItem())
+                .add(ModBlocks.PALLADIUM_PLATING_SLAB.get().asItem());
 
         this.tag(ItemTags.WALLS)
                 .add(ModBlocks.JUPITER_STONE_BRICK_WALL.get().asItem());

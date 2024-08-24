@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#northstar_extras:jupiter_biomes",
+  "features": "northstar_extras:jupiter/glowstone_ore",
+  "step": "underground_ores"
+}

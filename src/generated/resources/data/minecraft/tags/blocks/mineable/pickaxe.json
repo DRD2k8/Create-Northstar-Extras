@@ -32,6 +32,7 @@
     "northstar_extras:jupiter_quartz_ore",
     "northstar_extras:jupiter_zinc_ore",
     "northstar_extras:jupiter_glowstone_ore",
+    "northstar_extras:jupiter_palladium_ore",
     "northstar_extras:jupiter_deep_iron_ore",
     "northstar_extras:jupiter_deep_copper_ore",
     "northstar_extras:jupiter_deep_gold_ore",
@@ -39,6 +40,18 @@
     "northstar_extras:jupiter_deep_redstone_ore",
     "northstar_extras:jupiter_deep_quartz_ore",
     "northstar_extras:jupiter_deep_zinc_ore",
-    "northstar_extras:jupiter_deep_glowstone_ore"
+    "northstar_extras:jupiter_deep_glowstone_ore",
+    "northstar_extras:jupiter_deep_palladium_ore",
+    "northstar_extras:raw_palladium_block",
+    "northstar_extras:palladium_block",
+    "northstar_extras:palladium_sheetmetal",
+    "northstar_extras:palladium_sheetmetal_slab",
+    "northstar_extras:palladium_sheetmetal_vertical_slab",
+    "northstar_extras:palladium_plating",
+    "northstar_extras:palladium_plating_stairs",
+    "northstar_extras:palladium_plating_slab",
+    "northstar_extras:palladium_plating_vertical_slab",
+    "northstar_extras:palladium_pillar",
+    "northstar_extras:palladium_grate"
   ]
 }

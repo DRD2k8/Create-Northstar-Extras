@@ -1,5 +1,6 @@
 package com.drd.northstar_extras.util.tag;
 
+import com.simibubi.create.Create;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
@@ -23,6 +24,13 @@ public class ModItemTags {
     public static final TagKey<Item> LEAD_PLATES = tag("forge", "plates/lead");
     public static final TagKey<Item> LEAD_BLOCKS = tag("forge", "storage_blocks/lead");
     public static final TagKey<Item> LEAD_ORES = tag("forge", "ores/lead");
+    public static final TagKey<Item> RAW_PALLADIUM = tag("forge", "raw_materials/palladium");
+    public static final TagKey<Item> CRUSHED_RAW_PALLADIUM = tag(Create.ID, "crushed_raw_materials/palladium");
+    public static final TagKey<Item> PALLADIUM_INGOTS = tag("forge", "ingots/palladium");
+    public static final TagKey<Item> PALLADIUM_NUGGETS = tag("forge", "nuggets/palladium");
+    public static final TagKey<Item> PALLADIUM_PLATES = tag("forge", "plates/palladium");
+    public static final TagKey<Item> PALLADIUM_BLOCKS = tag("forge", "storage_blocks/palladium");
+    public static final TagKey<Item> PALLADIUM_ORES = tag("forge", "ores/palladium");
 
     private static TagKey<Item> tag(String modid, String name) {
         return ItemTags.create(new ResourceLocation(modid, name));

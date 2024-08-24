@@ -1,6 +1,7 @@
 {
   "values": [
     "#forge:ores/tungsten",
-    "#forge:ores/lead"
+    "#forge:ores/lead",
+    "#forge:ores/palladium"
   ]
 }

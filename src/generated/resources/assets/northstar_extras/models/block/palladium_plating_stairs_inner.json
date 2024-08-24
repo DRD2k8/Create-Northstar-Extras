@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "northstar_extras:block/palladium_plating",
+    "side": "northstar_extras:block/palladium_plating",
+    "top": "northstar_extras:block/palladium_plating"
+  }
+}

@@ -220,6 +220,9 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(5.0F, 12.0F).requiresCorrectToolForDrops().lightLevel((p_50872_) -> {
                 return 6;
             })));
+    public static final RegistryObject<Block> JUPITER_PALLADIUM_ORE = registerBlock("jupiter_palladium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERRACK).mapColor(MapColor.COLOR_ORANGE).strength(6.0F, 20.0F).requiresCorrectToolForDrops(),
+                    UniformInt.of(3, 7)));
     public static final RegistryObject<Block> JUPITER_DEEP_IRON_ORE = registerBlock("jupiter_deep_iron_ore",
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.BASALT).mapColor(MapColor.TERRACOTTA_RED).strength(6.0F, 12.0F).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> JUPITER_DEEP_COPPER_ORE = registerBlock("jupiter_deep_copper_ore",
@@ -242,6 +245,31 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.BASALT).mapColor(MapColor.TERRACOTTA_RED).strength(6.0F, 12.0F).requiresCorrectToolForDrops().lightLevel((p_50872_) -> {
                 return 6;
             })));
+    public static final RegistryObject<Block> JUPITER_DEEP_PALLADIUM_ORE = registerBlock("jupiter_deep_palladium_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of().sound(SoundType.BASALT).mapColor(MapColor.TERRACOTTA_RED).strength(7.0F, 20.0F).requiresCorrectToolForDrops(),
+                    UniformInt.of(3, 7)));
+    public static final RegistryObject<Block> RAW_PALLADIUM_BLOCK = registerBlock("raw_palladium_block",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.METAL).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PALLADIUM_BLOCK = registerBlock("palladium_block",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.METAL).strength(30.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PALLADIUM_SHEETMETAL = registerBlock("palladium_sheetmetal",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.METAL).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PALLADIUM_SHEETMETAL_SLAB = registerBlock("palladium_sheetmetal_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.METAL).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PALLADIUM_SHEETMETAL_VERTICAL_SLAB = registerBlock("palladium_sheetmetal_vertical_slab",
+            () -> new VerticalSlabBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.METAL).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PALLADIUM_PLATING = registerBlock("palladium_plating",
+            () -> new Block(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.METAL).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PALLADIUM_PLATING_STAIRS = registerBlock("palladium_plating_stairs",
+            () -> new StairBlock(((Block) PALLADIUM_PLATING.get()).defaultBlockState(), BlockBehaviour.Properties.copy(PALLADIUM_PLATING.get())));
+    public static final RegistryObject<Block> PALLADIUM_PLATING_SLAB = registerBlock("palladium_plating_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.METAL).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PALLADIUM_PLATING_VERTICAL_SLAB = registerBlock("palladium_plating_vertical_slab",
+            () -> new VerticalSlabBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.METAL).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PALLADIUM_PILLAR = registerBlock("palladium_pillar",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.METAL).strength(6.0F, 16.0F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> PALLADIUM_GRATE = registerBlock("palladium_grate",
+            () -> new GrateBlock(BlockBehaviour.Properties.of().sound(SoundType.NETHERITE_BLOCK).mapColor(MapColor.METAL).strength(5.0F, 16.0F).requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

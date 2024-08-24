@@ -1,0 +1,26 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "northstar_extras:jupiter_deep_palladium_ore"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "item": "northstar_extras:crushed_raw_palladium"
+    },
+    {
+      "chance": 0.75,
+      "item": "northstar_extras:crushed_raw_palladium"
+    },
+    {
+      "chance": 0.75,
+      "item": "create:experience_nugget"
+    },
+    {
+      "chance": 0.125,
+      "item": "northstar_extras:jupiter_deep_stone"
+    }
+  ]
+}

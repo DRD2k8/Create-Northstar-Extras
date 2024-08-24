@@ -107,6 +107,7 @@ public class ModTabs {
                         pOutput.accept(ModBlocks.JUPITER_QUARTZ_ORE.get());
                         pOutput.accept(ModBlocks.JUPITER_ZINC_ORE.get());
                         pOutput.accept(ModBlocks.JUPITER_GLOWSTONE_ORE.get());
+                        pOutput.accept(ModBlocks.JUPITER_PALLADIUM_ORE.get());
                         pOutput.accept(ModBlocks.JUPITER_DEEP_IRON_ORE.get());
                         pOutput.accept(ModBlocks.JUPITER_DEEP_COPPER_ORE.get());
                         pOutput.accept(ModBlocks.JUPITER_DEEP_GOLD_ORE.get());
@@ -115,6 +116,23 @@ public class ModTabs {
                         pOutput.accept(ModBlocks.JUPITER_DEEP_QUARTZ_ORE.get());
                         pOutput.accept(ModBlocks.JUPITER_DEEP_ZINC_ORE.get());
                         pOutput.accept(ModBlocks.JUPITER_DEEP_GLOWSTONE_ORE.get());
+                        pOutput.accept(ModBlocks.JUPITER_DEEP_PALLADIUM_ORE.get());
+                        pOutput.accept(ModItems.RAW_PALLADIUM.get());
+                        pOutput.accept(ModItems.CRUSHED_RAW_PALLADIUM.get());
+                        pOutput.accept(ModItems.PALLADIUM_INGOT.get());
+                        pOutput.accept(ModItems.PALLADIUM_NUGGET.get());
+                        pOutput.accept(ModItems.PALLADIUM_SHEET.get());
+                        pOutput.accept(ModBlocks.RAW_PALLADIUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.PALLADIUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.PALLADIUM_SHEETMETAL.get());
+                        pOutput.accept(ModBlocks.PALLADIUM_SHEETMETAL_SLAB.get());
+                        pOutput.accept(ModBlocks.PALLADIUM_SHEETMETAL_VERTICAL_SLAB.get());
+                        pOutput.accept(ModBlocks.PALLADIUM_PLATING.get());
+                        pOutput.accept(ModBlocks.PALLADIUM_PLATING_STAIRS.get());
+                        pOutput.accept(ModBlocks.PALLADIUM_PLATING_SLAB.get());
+                        pOutput.accept(ModBlocks.PALLADIUM_PLATING_VERTICAL_SLAB.get());
+                        pOutput.accept(ModBlocks.PALLADIUM_PILLAR.get());
+                        pOutput.accept(ModBlocks.PALLADIUM_GRATE.get());
                     })
                     .build());
 

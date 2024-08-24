@@ -108,6 +108,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.JUPITER_QUARTZ_ORE.get())
                 .add(ModBlocks.JUPITER_ZINC_ORE.get())
                 .add(ModBlocks.JUPITER_GLOWSTONE_ORE.get())
+                .add(ModBlocks.JUPITER_PALLADIUM_ORE.get())
                 .add(ModBlocks.JUPITER_DEEP_IRON_ORE.get())
                 .add(ModBlocks.JUPITER_DEEP_COPPER_ORE.get())
                 .add(ModBlocks.JUPITER_DEEP_GOLD_ORE.get())
@@ -115,7 +116,19 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.JUPITER_DEEP_REDSTONE_ORE.get())
                 .add(ModBlocks.JUPITER_DEEP_QUARTZ_ORE.get())
                 .add(ModBlocks.JUPITER_DEEP_ZINC_ORE.get())
-                .add(ModBlocks.JUPITER_DEEP_GLOWSTONE_ORE.get());
+                .add(ModBlocks.JUPITER_DEEP_GLOWSTONE_ORE.get())
+                .add(ModBlocks.JUPITER_DEEP_PALLADIUM_ORE.get())
+                .add(ModBlocks.RAW_PALLADIUM_BLOCK.get())
+                .add(ModBlocks.PALLADIUM_BLOCK.get())
+                .add(ModBlocks.PALLADIUM_SHEETMETAL.get())
+                .add(ModBlocks.PALLADIUM_SHEETMETAL_SLAB.get())
+                .add(ModBlocks.PALLADIUM_SHEETMETAL_VERTICAL_SLAB.get())
+                .add(ModBlocks.PALLADIUM_PLATING.get())
+                .add(ModBlocks.PALLADIUM_PLATING_STAIRS.get())
+                .add(ModBlocks.PALLADIUM_PLATING_SLAB.get())
+                .add(ModBlocks.PALLADIUM_PLATING_VERTICAL_SLAB.get())
+                .add(ModBlocks.PALLADIUM_PILLAR.get())
+                .add(ModBlocks.PALLADIUM_GRATE.get());
 
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(ModBlocks.JUPITER_ASH.get());
@@ -129,9 +142,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(ModBlockTags.LEAD_BLOCKS)
                 .add(ModBlocks.LEAD_BLOCK.get());
 
+        this.tag(ModBlockTags.PALLADIUM_BLOCKS)
+                .add(ModBlocks.PALLADIUM_BLOCK.get());
+
         this.tag(Tags.Blocks.ORES)
                 .addTag(ModBlockTags.TUNGSTEN_ORES)
-                .addTag(ModBlockTags.LEAD_ORES);
+                .addTag(ModBlockTags.LEAD_ORES)
+                .addTag(ModBlockTags.PALLADIUM_ORES);
 
         this.tag(ModBlockTags.TUNGSTEN_ORES)
                 .add(NorthstarBlocks.MERCURY_TUNGSTEN_ORE.get())
@@ -141,12 +158,17 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.VENUS_LEAD_ORE.get())
                 .add(ModBlocks.VENUS_DEEP_LEAD_ORE.get());
 
+        this.tag(ModBlockTags.PALLADIUM_ORES)
+                .add(ModBlocks.JUPITER_PALLADIUM_ORE.get())
+                .add(ModBlocks.JUPITER_DEEP_PALLADIUM_ORE.get());
+
         this.tag(BlockTags.STAIRS)
                 // Venus
                 .add(ModBlocks.LEAD_PLATING_STAIRS.get())
 
                 // Jupiter
-                .add(ModBlocks.JUPITER_STONE_BRICK_STAIRS.get());
+                .add(ModBlocks.JUPITER_STONE_BRICK_STAIRS.get())
+                .add(ModBlocks.PALLADIUM_PLATING_STAIRS.get());
 
         this.tag(BlockTags.SLABS)
                 // Venus
@@ -154,7 +176,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.LEAD_PLATING_SLAB.get())
 
                 // Jupiter
-                .add(ModBlocks.JUPITER_STONE_BRICK_SLAB.get());
+                .add(ModBlocks.JUPITER_STONE_BRICK_SLAB.get())
+                .add(ModBlocks.PALLADIUM_SHEETMETAL_SLAB.get())
+                .add(ModBlocks.PALLADIUM_PLATING_SLAB.get());
 
         this.tag(BlockTags.WALLS)
                 // For fixing the walls from Northstar
@@ -271,15 +295,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.JUPITER_DEEP_GLOWSTONE_ORE.get());
 
         this.tag(ModBlockTags.TIER_4_HEAT_RESISTANCE)
-                .add(ModBlocks.LEAD_BLOCK.get())
-                .add(ModBlocks.LEAD_SHEETMETAL.get())
-                .add(ModBlocks.LEAD_SHEETMETAL_SLAB.get())
-                .add(ModBlocks.LEAD_SHEETMETAL_VERTICAL_SLAB.get())
                 .add(ModBlocks.LEAD_PLATING.get())
-                .add(ModBlocks.LEAD_PLATING_STAIRS.get())
-                .add(ModBlocks.LEAD_PLATING_SLAB.get())
-                .add(ModBlocks.LEAD_PLATING_VERTICAL_SLAB.get())
+                .add(ModBlocks.LEAD_BLOCK.get())
                 .add(ModBlocks.LEAD_PILLAR.get())
-                .add(ModBlocks.LEAD_GRATE.get());
+                .add(ModBlocks.LEAD_SHEETMETAL.get());
+
+        this.tag(ModBlockTags.TIER_5_HEAT_RESISTANCE)
+                .add(ModBlocks.PALLADIUM_PLATING.get())
+                .add(ModBlocks.PALLADIUM_BLOCK.get())
+                .add(ModBlocks.PALLADIUM_PILLAR.get())
+                .add(ModBlocks.PALLADIUM_SHEETMETAL.get());
     }
 }

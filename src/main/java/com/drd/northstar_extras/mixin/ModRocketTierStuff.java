@@ -32,6 +32,10 @@ public class ModRocketTierStuff extends TranslatingContraption {
         if (blockState.is(ModBlockTags.TIER_4_HEAT_RESISTANCE) && !blockState.is(Blocks.AIR)) {
             this.heatShielding += 50;
         }
+
+        if (blockState.is(ModBlockTags.TIER_5_HEAT_RESISTANCE) && !blockState.is(Blocks.AIR)) {
+            this.heatShielding += 100;
+        }
     }
 
     @Override

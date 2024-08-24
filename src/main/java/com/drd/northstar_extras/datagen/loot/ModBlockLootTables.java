@@ -138,6 +138,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.JUPITER_QUARTZ_ORE.get(), createOreDrop(ModBlocks.JUPITER_QUARTZ_ORE.get(), Items.QUARTZ));
         this.add(ModBlocks.JUPITER_ZINC_ORE.get(), createOreDrop(ModBlocks.JUPITER_ZINC_ORE.get(), AllItems.RAW_ZINC.get()));
         this.add(ModBlocks.JUPITER_GLOWSTONE_ORE.get(), createOreDrop(ModBlocks.JUPITER_GLOWSTONE_ORE.get(), NorthstarItems.RAW_GLOWSTONE_ORE.get()));
+        this.add(ModBlocks.JUPITER_PALLADIUM_ORE.get(), createOreDrop(ModBlocks.JUPITER_PALLADIUM_ORE.get(), ModItems.RAW_PALLADIUM.get()));
         this.add(ModBlocks.JUPITER_DEEP_IRON_ORE.get(), createOreDrop(ModBlocks.JUPITER_DEEP_IRON_ORE.get(), Items.RAW_IRON));
         this.add(ModBlocks.JUPITER_DEEP_COPPER_ORE.get(), createCopperLikeOreDrops(ModBlocks.JUPITER_DEEP_COPPER_ORE.get(), Items.RAW_COPPER));
         this.add(ModBlocks.JUPITER_DEEP_GOLD_ORE.get(), createOreDrop(ModBlocks.JUPITER_DEEP_GOLD_ORE.get(), Items.RAW_GOLD));
@@ -146,6 +147,22 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.JUPITER_DEEP_QUARTZ_ORE.get(), createOreDrop(ModBlocks.JUPITER_DEEP_QUARTZ_ORE.get(), Items.QUARTZ));
         this.add(ModBlocks.JUPITER_DEEP_ZINC_ORE.get(), createOreDrop(ModBlocks.JUPITER_DEEP_ZINC_ORE.get(), AllItems.RAW_ZINC.get()));
         this.add(ModBlocks.JUPITER_DEEP_GLOWSTONE_ORE.get(), createOreDrop(ModBlocks.JUPITER_DEEP_GLOWSTONE_ORE.get(), NorthstarItems.RAW_GLOWSTONE_ORE.get()));
+        this.add(ModBlocks.JUPITER_DEEP_PALLADIUM_ORE.get(), createOreDrop(ModBlocks.JUPITER_DEEP_PALLADIUM_ORE.get(), ModItems.RAW_PALLADIUM.get()));
+        this.dropSelf(ModBlocks.RAW_PALLADIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.PALLADIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.PALLADIUM_SHEETMETAL.get());
+        this.add(ModBlocks.PALLADIUM_SHEETMETAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.PALLADIUM_SHEETMETAL_SLAB.get()));
+        this.add(ModBlocks.PALLADIUM_SHEETMETAL_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.PALLADIUM_SHEETMETAL_VERTICAL_SLAB.get()));
+        this.dropSelf(ModBlocks.PALLADIUM_PLATING.get());
+        this.dropSelf(ModBlocks.PALLADIUM_PLATING_STAIRS.get());
+        this.add(ModBlocks.PALLADIUM_PLATING_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.PALLADIUM_PLATING_SLAB.get()));
+        this.add(ModBlocks.PALLADIUM_PLATING_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.PALLADIUM_PLATING_VERTICAL_SLAB.get()));
+        this.dropSelf(ModBlocks.PALLADIUM_PILLAR.get());
+        this.dropSelf(ModBlocks.PALLADIUM_GRATE.get());
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

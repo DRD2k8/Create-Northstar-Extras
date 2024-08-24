@@ -29,6 +29,7 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> JUPITER_QUARTZ_ORE = registerKey("jupiter/quartz_ore");
     public static final ResourceKey<PlacedFeature> JUPITER_ZINC_ORE = registerKey("jupiter/zinc_ore");
     public static final ResourceKey<PlacedFeature> JUPITER_GLOWSTONE_ORE = registerKey("jupiter/glowstone_ore");
+    public static final ResourceKey<PlacedFeature> JUPITER_PALLADIUM_ORE = registerKey("jupiter/palladium_ore");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -63,6 +64,9 @@ public class ModPlacedFeatures {
         register(context, JUPITER_GLOWSTONE_ORE, configuredFeatures.getOrThrow(ModConfiguredFeatures.JUPITER_GLOWSTONE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(5,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(10), VerticalAnchor.absolute(60))));
+        register(context, JUPITER_PALLADIUM_ORE, configuredFeatures.getOrThrow(ModConfiguredFeatures.JUPITER_PALLADIUM_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(8,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(60))));
     }
 
 

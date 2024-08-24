@@ -62,6 +62,7 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         blockWithItem(ModBlocks.JUPITER_QUARTZ_ORE);
         blockWithItem(ModBlocks.JUPITER_ZINC_ORE);
         blockWithItem(ModBlocks.JUPITER_GLOWSTONE_ORE);
+        blockWithItem(ModBlocks.JUPITER_PALLADIUM_ORE);
         blockWithItem(ModBlocks.JUPITER_DEEP_IRON_ORE);
         blockWithItem(ModBlocks.JUPITER_DEEP_COPPER_ORE);
         blockWithItem(ModBlocks.JUPITER_DEEP_GOLD_ORE);
@@ -70,6 +71,17 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         blockWithItem(ModBlocks.JUPITER_DEEP_QUARTZ_ORE);
         blockWithItem(ModBlocks.JUPITER_DEEP_ZINC_ORE);
         blockWithItem(ModBlocks.JUPITER_DEEP_GLOWSTONE_ORE);
+        blockWithItem(ModBlocks.JUPITER_DEEP_PALLADIUM_ORE);
+        blockWithItem(ModBlocks.RAW_PALLADIUM_BLOCK);
+        blockWithItem(ModBlocks.PALLADIUM_BLOCK);
+        blockWithItem(ModBlocks.PALLADIUM_SHEETMETAL);
+        slabBlock(((SlabBlock) ModBlocks.PALLADIUM_SHEETMETAL_SLAB.get()), blockTexture(ModBlocks.PALLADIUM_SHEETMETAL.get()), blockTexture(ModBlocks.PALLADIUM_SHEETMETAL.get()));
+        blockWithItem(ModBlocks.PALLADIUM_PLATING);
+        stairsBlock(((StairBlock) ModBlocks.PALLADIUM_PLATING_STAIRS.get()), blockTexture(ModBlocks.PALLADIUM_PLATING.get()));
+        slabBlock(((SlabBlock) ModBlocks.PALLADIUM_PLATING_SLAB.get()), blockTexture(ModBlocks.PALLADIUM_PLATING.get()), blockTexture(ModBlocks.PALLADIUM_PLATING.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.PALLADIUM_PILLAR.get()), blockTexture(ModBlocks.PALLADIUM_PILLAR.get()),
+                new ResourceLocation(NorthstarExtras.MOD_ID, "block/palladium_pillar_top"));
+        blockWithItem(ModBlocks.PALLADIUM_GRATE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

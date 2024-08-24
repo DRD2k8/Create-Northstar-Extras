@@ -20,6 +20,7 @@ import java.util.function.Consumer;
 
 public class ModRecipeGenerator extends RecipeProvider implements IConditionBuilder {
     private static final List<ItemLike> LEAD_SMELTABLES = List.of(ModItems.RAW_LEAD.get(), ModBlocks.VENUS_LEAD_ORE.get(), ModBlocks.VENUS_DEEP_LEAD_ORE.get());
+    private static final List<ItemLike> PALLADIUM_SMELTABLES = List.of(ModItems.RAW_PALLADIUM.get(), ModBlocks.JUPITER_PALLADIUM_ORE.get(), ModBlocks.JUPITER_DEEP_PALLADIUM_ORE.get());
 
     public ModRecipeGenerator(PackOutput pOutput) {
         super(pOutput);
@@ -484,6 +485,98 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.JUPITER_STONE_BRICKS.get(), ModBlocks.JUPITER_STONE_BRICK_VERTICAL_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.JUPITER_STONE_BRICKS.get(), ModBlocks.JUPITER_STONE_BRICK_WALL.get(), 1);
         stonecutting(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.JUPITER_STONE_BRICKS.get(), ModBlocks.JUPITER_STONE_PILLAR.get(), 1);
+        oreSmelting(consumer, PALLADIUM_SMELTABLES, RecipeCategory.MISC, ModItems.PALLADIUM_INGOT.get(), 0.25f, 200, "item");
+        oreBlasting(consumer, PALLADIUM_SMELTABLES, RecipeCategory.MISC, ModItems.PALLADIUM_INGOT.get(), 0.25f, 100, "item");
+        oreSmelting(consumer, List.of(ModItems.CRUSHED_RAW_PALLADIUM.get()), RecipeCategory.MISC, ModItems.PALLADIUM_INGOT.get(), 0.1f, 200, "item");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_PALLADIUM.get(), 9)
+                .requires(ModBlocks.RAW_PALLADIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.RAW_PALLADIUM_BLOCK.get()), has(ModBlocks.RAW_PALLADIUM_BLOCK.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_PALLADIUM_BLOCK.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.RAW_PALLADIUM.get())
+                .unlockedBy(getHasName(ModItems.RAW_PALLADIUM.get()), has(ModItems.RAW_PALLADIUM.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PALLADIUM_INGOT.get(), 9)
+                .requires(ModBlocks.PALLADIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.PALLADIUM_BLOCK.get()), has(ModBlocks.PALLADIUM_BLOCK.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALLADIUM_BLOCK.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.PALLADIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.PALLADIUM_INGOT.get()), has(ModItems.PALLADIUM_INGOT.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PALLADIUM_NUGGET.get(), 9)
+                .requires(ModItems.PALLADIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.PALLADIUM_INGOT.get()), has(ModItems.PALLADIUM_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.PALLADIUM_INGOT.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.PALLADIUM_NUGGET.get())
+                .unlockedBy(getHasName(ModItems.PALLADIUM_NUGGET.get()), has(ModItems.PALLADIUM_NUGGET.get()))
+                .save(consumer, NorthstarExtras.MOD_ID + ":palladium_ingot_from_nuggets");
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALLADIUM_SHEETMETAL.get(), 4)
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModItems.PALLADIUM_SHEET.get())
+                .unlockedBy(getHasName(ModItems.PALLADIUM_SHEET.get()), has(ModItems.PALLADIUM_SHEET.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALLADIUM_SHEETMETAL_SLAB.get(), 6)
+                .pattern("###")
+                .define('#', ModBlocks.PALLADIUM_SHEETMETAL.get())
+                .unlockedBy(getHasName(ModItems.PALLADIUM_SHEET.get()), has(ModItems.PALLADIUM_SHEET.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALLADIUM_SHEETMETAL_VERTICAL_SLAB.get(), 6)
+                .pattern("#")
+                .pattern("#")
+                .pattern("#")
+                .define('#', ModBlocks.PALLADIUM_SHEETMETAL.get())
+                .unlockedBy(getHasName(ModItems.PALLADIUM_SHEET.get()), has(ModItems.PALLADIUM_SHEET.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALLADIUM_PLATING.get(), 4)
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModItems.PALLADIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.PALLADIUM_INGOT.get()), has(ModItems.PALLADIUM_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALLADIUM_PLATING_STAIRS.get(), 4)
+                .pattern("#  ")
+                .pattern("## ")
+                .pattern("###")
+                .define('#', ModBlocks.PALLADIUM_PLATING.get())
+                .unlockedBy(getHasName(ModItems.PALLADIUM_INGOT.get()), has(ModItems.PALLADIUM_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALLADIUM_PLATING_SLAB.get(), 6)
+                .pattern("###")
+                .define('#', ModBlocks.PALLADIUM_PLATING.get())
+                .unlockedBy(getHasName(ModItems.PALLADIUM_INGOT.get()), has(ModItems.PALLADIUM_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALLADIUM_PLATING_VERTICAL_SLAB.get(), 6)
+                .pattern("#")
+                .pattern("#")
+                .pattern("#")
+                .define('#', ModBlocks.PALLADIUM_PLATING.get())
+                .unlockedBy(getHasName(ModItems.PALLADIUM_INGOT.get()), has(ModItems.PALLADIUM_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALLADIUM_PILLAR.get(), 2)
+                .pattern("#")
+                .pattern("#")
+                .define('#', ModItems.PALLADIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.PALLADIUM_INGOT.get()), has(ModItems.PALLADIUM_INGOT.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PALLADIUM_GRATE.get(), 5)
+                .pattern("# #")
+                .pattern(" # ")
+                .pattern("# #")
+                .define('#', ModItems.PALLADIUM_SHEET.get())
+                .unlockedBy(getHasName(ModItems.PALLADIUM_SHEET.get()), has(ModItems.PALLADIUM_SHEET.get()))
+                .save(consumer);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {
